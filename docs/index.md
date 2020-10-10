@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-# Navigation Structure
+# Home
 {: .no_toc }
 
 ## Table of contents
