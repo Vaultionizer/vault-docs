@@ -38,6 +38,9 @@ Planned Subsystems are:
 | tbd         | to be determined                       |
 | UCD         | overall Use Case Diagram               |
 | FAQ         | Frequently asked Questions             |
+| FAQ         | Frequently asked Questions             |
+| FAQ         | Frequently asked Questions             |
+| FAQ         | Frequently asked Questions             |
 
 ### 1.4 References
 
