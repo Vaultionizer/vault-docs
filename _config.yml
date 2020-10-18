@@ -37,6 +37,7 @@ search_enabled: true
 aux_links_new_tab: true
 heading_anchors: true
 footer_content: "Copyright &copy; 2020 Vaultionizer"
+color_scheme: dark
 
 aux_links:
   "GitHub":

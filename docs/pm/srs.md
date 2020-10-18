@@ -197,13 +197,11 @@ We don't have any purchased components yet. If there will be purchased component
 
 #### 3.9.1 User Interfaces
 The User interfaces that will be implented are:
-- Dashboard - lists all session and makes it possible to filter sessions
-- Session Page - shows detailed information about the session and makes it possible to connect session attendants for example via messaging system
+- Dashboard - lists all hosts the user is connected to
+- Files - shows the file structure and allows the user to download and upload files
+- Persoanl container - Allows to store personal data like social security number and more
 - Login - this page is used to log in 
 - Register - provides a registration form
-- Overwiew of personal sessions - shows all the sessions a user participates in
-- Friend List - friends can be added
-- Profile - makes it possible to post information about yourself, might provide messaging feature, also shows additional information about users (for example: Language, country, favorite games, etc.)
 - Settings - shows the settings
 
 #### 3.9.2 Hardware Interfaces
