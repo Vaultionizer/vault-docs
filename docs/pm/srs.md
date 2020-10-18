@@ -57,6 +57,7 @@ Vaultionizer is a highly dynamic and secure app which allows you to keep all you
 The goal is no to be the next Dropbox or Google Drive, the approach here is a little bit different and requires some own effort from the user.
 Instead of trusting a third party service, the user alone will be able to decide where his data is stored by using the back-end we provide. 
 Together with our multi-purpose app Vaultionizer will provide the user with the tools necessary to store his data in a secure manner.
+We will only provide a demo back-end for all users that want to try our app, but in order to unlock all features they have to host the back-end themselves.
 
 ### 2.2 Use Case Diagram
 
@@ -69,114 +70,82 @@ Together with our multi-purpose app Vaultionizer will provide the user with the 
 The technology we use is:
 
 Backend:
--Gradle and Springboot
--H2 Database
+* Maven, Spring Boot and other libraries ([Details](https://github.com/vaultionizer/vault-server/blob/master/pom.xml))
 
 Frontend:
--Android with Java and XML
+* Android, Java, Maven
 
 IDE:
--IntelliJ and Android Studio
+* IntelliJ
+* Android Studio
 
 Project Management:
--YouTrack
--GitHub
--Microsoft Teams
+* YouTrack
+* GitHub
+* Discord
+* Telegram
 
 Deployment:
--Travis CI
--Docker and Heroku
+* GitHub Actions
+* Docker
 
 Testing:
--Cucumber
--Espresso
--JUnit
--Codacy
--CodeMR
--RestAssured
+* Cucumber
+* JUnit
+* Codacy
 
 ## 3. Specific Requirements
 
 ### 3.1 Functionality
 This section will explain the different use cases, you could see in the Use Case Diagram, and their functionality.  
-Until December we plan to implement:
-- 3.1.1 Posting a session
-- 3.1.2 Getting an overview
-- 3.1.3 Creating an account
-- 3.1.4 Logging in
-- 3.1.5 Logging out
 
-Until June, we want to implement:
-- 3.1.6 Joining a session
-- 3.1.7 Keeping track of your sessions
-- 3.1.8 Leaving a session
-- 3.1.9 Finding a session
-- 3.1.10 Getting in touch
+#### 3.1.1 Upload file
+The user can upload files to his personal secure space. All of these files are encrypted via a personal key.
 
-#### 3.1.1 Posting a session
-This feature is the essential one of our project. The user gets the possibility to post a session. Therefore, they have to select a game and also set the time when they want to play.For offline games, they have to set a location, too. For online games the location can be a server for example or simply be tagged as 'online'.
+#### 3.1.2 Upload personal container
+The app will not only support the storage of files. You can also store all of your personal information like social security numbers, contact and more. The Android app will provide a seperate UI for this.
+Of course these information will get encrypted too.
 
-[Posting a session](./use_cases/UC1_Post_Session.md)
+#### 3.1.4 View file structure
+The user can view the file structure without downloading any files.
 
-#### 3.1.2 Getting an overview
-This feature provides a basic overview over all current sessions. All posted sessions are added here. From this overview you can select a session and from there join this session.
+#### 3.1.5 Download file
+The user can download individual files. They get decrypted locally in order to provide strong security.
 
-[Session overview](./use_cases/UC3_Session_Overview.md)
+#### 3.1.6 Download personal container
+As mentioned in section 3.1.2 we offer the possibility to create a container for personal data.
+This container can be synced between multiple devices.
 
-#### 3.1.3 Creating an account
-To identify all useres we need an account system. This account system enables us to build important functions such as joining a session, leaving a session or a personalized overview over all sessions (Keeping track of your sessions).
+#### 3.1.9 Register
+The app offers the ability to create an account on the server. This registration process is, however, restricted. The admin of the back-end is required to generate an authentification key that the user must provide for the registration. Besides this key, the user must also provide a host, an username and a secure master password.
 
-[Create an account](./use_cases/UC4_Create_Account.md)
+#### 3.1.8 Login
+First of all the user must provide a host on which our back-end is running. The login itself is done via the username and master password.
 
-#### 3.1.4 Logging in
-The app will provide the possibility to register and log in. This will also make the usability easier when a user wants to manage his sessions, post or join a session because they don't have to enter their mail address every time.
+#### 3.1.10 Regenerate keys
+It is possible to invalidate an encrpytion key and generate a new one. All files that were previously encrypted with that key are now encrypted using the new one and uploaded again. 
 
-[Login](./use_cases/UC5_Login.md)
+#### 3.1.11 Delete keys
+Users can delete exisiting keys.
 
-#### 3.1.5 Logging out
-In case you share your phone, have multiple accounts or just want to be cautius about your privacy you should be able to manually log out.
+#### 3.1.13 Create space
+Users on the same back-end have the possibility to create a shared space. It is pretty similar to a shared folder on Dropbox or Google Drive. The space is, of course, encrypted via a shared key. The owner of the space must exchange this key with other users via a method described in 3.1.15.
 
-[Logout](./use_cases/UC6_Logout.md)
+#### 3.1.14 Delete Space
+Space owners can delete their spaces.
 
-#### 3.1.6 Joining a session
-There is also the possibility to join an existing game session. Therefore, the user can select a specific session.
+#### 3.1.15 Generate key for invitations
+Because spaces have no searchable name and are usally hidden from other users, the space owner must generate an invitation key. This key is used to find the space on the server. Furthermore it is required to exchange the encryption key itself to decrypt the data.
 
-[Join a session](./use_cases/UC2_Join_Session.md)
-
-#### 3.1.7 Keeping track of your sessions
-The app provides the user with a seperate page view where they get an overview of all sessions they posted or joined. When the user clicks on a session, he can also see who joined his posted sessions.
-
-[Keeping track of your sessions](./use_cases/UC7_Keeping_Track.md)
-
-#### 3.1.8 Leaving a session
-The user gets also the possibility to delete a session he posted or to leave a session he joined.
-
-[Leaving a session](./use_cases/UC8_Leave_Session.md)
-
-#### 3.1.9 Finding a session
-Based on the overview over all sessions this features enables the user to find sessions by specific parameters. Therefore, the user can find a session by tags or other parameters like date. Later on, finding a session will be provided by geolocalization that the users can search for a session in a specific area.
-
-[Finding a session](./use_cases/UC9_Find_Session.md)
-
-#### 3.1.10 Getting in touch
-There must be the possibility that two people who want to play together can communicate with each other. The player who joins the session gets the possibility to contact the owner and vice versa. Later on, when we will have implemented profiles, then they will form another way to communicate with each other.
-
-[Getting in Touch](./use_cases/UC10_Getting_In_Touch.md)
-
-#### 3.1.11 Presenting yourself and checking out others
-With the possibility to log in there comes another functionality, the profile. Every user will have their own profile where they can write some informations about themselves. Because of the privacy policy in Europe, the user has the possibility to only write the information they want other people to see. Using the profile, users can also check out other players and learn e.g. their favorite games.
-
-#### 3.1.12 Reporting users and managing friends
-After a session, the app provides the users with the possibility to report the other participants. This is helpful because we want a community with fair players. Additionally, when they found an interesting person they can also add them to their friend list which also has a seperate page view.
-
-#### 3.1.13 Banning users and deleting posts
-There are also some functionalities for the admins. They will get the possibility to ban users and to delete any posts.
+#### 3.1.12 Exchange keys
+Users can exchange encryption keys via a QR Code or Bluetooth. This is important for shared spaces because the server is never involved in any kind of key exchange.
 
 ### 3.2 Usability
-We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. Though an FAQ document will be available, it should not be necessary to use it.
+We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. Though an FAQ document will be available, it should not be necessary to use it. We also provide documentation for more complicated features.
+We also want to provide a detailed step by step installation guide for the back-end.
 
 #### 3.2.1 No training time needed
-Our goal is that a user installs the android application, opens it and is able to use all features without any explanation or help.
+Our goal is that a user installs the android application, opens it and is able to use all features without any explanation or help. This includes external documents like a FAQ or other types of tutorials.
 
 #### 3.2.2 Familiar Feeling
 We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the app without having to get to know new interfaces.
@@ -192,10 +161,10 @@ Our goal is that we have no loss of any data. This is important so that the game
 ### 3.4 Perfomance
 
 #### 3.4.1 Capacity
-The system should be able to manage thousands of requests. Also it should be possible to register as many users as necessary.
+The system should be able to manage thousands of requests. For the back-end bandwidth will be pretty important if many users upload or download files simultaneously.
 
 #### 3.4.2 Storage 
-Smartphones don't provide much storage. Therefore we are aiming to keep the needed storage as small as possible.
+Smartphones don't provide much storage. Therefore we are aiming to keep the needed storage as small as possible. Before the files are encrypted and uploaded to the server the app uses a general puropose compression algorithm in order to reduce the file size.
 
 #### 3.4.3 App perfomance / Response time
 To provide the best App perfomance we aim to keep the response time as low as possible. This will make the user experience much better.
@@ -204,9 +173,10 @@ To provide the best App perfomance we aim to keep the response time as low as po
 
 #### 3.5.1 Coding Standards
 We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
+Pull requests and code reviews will ensure that we adhere to these standards.
 
 #### 3.5.2 Testing Strategy
-The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly and it will be easy to locate the error. 
+The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly and it will be easy to locate the error.
 
 ### 3.6 Design Constraints
 We are trying to provide a modern and easy to handle design for the UI aswell as for the architecture of our application. To achieve that the functionalities will be kept as modular as possible.
@@ -243,7 +213,7 @@ The User interfaces that will be implented are:
 The app will be runnable on Android 4.4 and higher. iOS won't be featured at the moment.
 
 #### 3.9.4 Communication Interfaces
-The server and hardware will communicate using the http protocol. 
+The server and hardware will communicate using the https/websocket protocol. 
 
 ### 3.10 Licensing Requirements
 
@@ -254,12 +224,8 @@ The logo is licensed to the Common Playground Team and is only allowed to use fo
 The development will follow the common clean code standards and naming conventions. Also we will create a definition of d which will be added here as soon as its complete.
 
 ## 4. Supporting Information
-For any further information you can contact the Common Playground Team or check our [Common Playground Blog](http://commonplayground.wordpress.com). 
+For any further information you can contact the Common Playground Team or check our [Blog](https://vaultionizer.com). 
 The Team Members are:
-- Celina Adam
-- Inga Batton
-- Nils Krehl 
-- Denis Reibel
-
-<!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"
+- Johannes Quast
+- Julien Meier
+- Yannic Hemmer
