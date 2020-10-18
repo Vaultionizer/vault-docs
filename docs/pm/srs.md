@@ -39,8 +39,9 @@ User data for accounts and possibly profiles has to be stored. Also the game ses
 We need a tag system so everyone looking to join a game can search for the kind of games they are interested in. Possibly other aspects can be searchable, such as place or date. Tags must be stored and a search function developed. 
 
 ### 1.3 Definitions, Acronyms and Abbreviations
+
 | Abbrevation | Explanation                            |
-| ----------- | -------------------------------------- |
+| ------------| -------------------------------------- |
 | SRS         | Software Requirements Specification    |
 | UC          | Use Case                               |
 | n/a         | not applicable                         |
