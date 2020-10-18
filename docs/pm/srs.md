@@ -63,8 +63,8 @@ We will only provide a demo back-end for all users that want to try our app, but
 
 ![OUCD](./../../img/UCV.svg)
 
-- Green: Planned till end of december
-- White: Planned till end of june (next semester)
+- Green: Planned until end of December
+- White: Planned until end of June (next semester)
 
 ### 2.3 Technology Stack
 The technology we use is:
