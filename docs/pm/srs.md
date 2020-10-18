@@ -41,7 +41,7 @@ We need a tag system so everyone looking to join a game can search for the kind 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
 | Abbrevation | Explanation                            |
-| ------------| -------------------------------------- |
+|:-----------:|:--------------------------------------:|
 | SRS         | Software Requirements Specification    |
 | UC          | Use Case                               |
 | n/a         | not applicable                         |
