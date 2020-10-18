@@ -51,10 +51,10 @@ We need a tag system so everyone looking to join a game can search for the kind 
 
 ### 1.4 References
 
-| Title                                                              | Date       | Publishing organization   |
-| -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Common Playground Blog](http://commonplayground.wordpress.com)    | 18.10.2018 | Common Playground Team    |
-| [GitHub](https://github.com/nilskre/CommonPlayground)              | 18.10.2018 | Common Playground Team    |
+| Title                                       | Date       | Publishing organization   |
+| ------------------------------------------- |:----------:| ------------------------- |
+| [Website &  Blog](https://vaultionizer.com) | 18.10.2020 | Common Playground Team    |
+| [GitHub](https://github.com/vaultionizer/)  | 18.10.2020 | Vaultionizer              |
 
 
 ### 1.5 Overview
