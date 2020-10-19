@@ -38,17 +38,14 @@ Planned Subsystems are:
 | tbd         | to be determined                       |
 | UCD         | overall Use Case Diagram               |
 | FAQ         | Frequently asked Questions             |
-| FAQ         | Frequently asked Questions             |
-| FAQ         | Frequently asked Questions             |
-| FAQ         | Frequently asked Questions             |
 
 ### 1.4 References
 
 | Title                                       | Date       | Publishing organization   |
 | ------------------------------------------- |:----------:| ------------------------- |
-| [Website &  Blog](https://vaultionizer.com) | 18.10.2020 | Common Playground Team    |
+| [Website &  Blog](https://vaultionizer.com) | 18.10.2020 | Vaultionizer              |
+| [FAQ](https://github.com/vaultionizer/faq)  | 18.10.2020 | Vaultionizer              |
 | [GitHub](https://github.com/vaultionizer/)  | 18.10.2020 | Vaultionizer              |
-
 
 ### 1.5 Overview
 The following chapter provides an overview of this project with vision and Overall Use Case Diagram. The third chapter (Requirements Specification) delivers more details about the specific requirements in terms of functionality, usability and design parameters. Finally there is a chapter with supporting information. 
@@ -67,7 +64,7 @@ We will only provide a demo back-end for all users that want to try our app, but
 ![OUCD](./../../img/UCV.svg)
 
 - Green: Planned until end of December
-- White: Planned until end of June (next semester)
+- White: Planned until end of June (second semester)
 
 ### 2.3 Technology Stack
 The technology we use is:
@@ -144,27 +141,29 @@ Because spaces have no searchable name and are usally hidden from other users, t
 Users can exchange encryption keys via a QR Code or Bluetooth. This is important for shared spaces because the server is never involved in any kind of key exchange.
 
 ### 3.2 Usability
-We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. Though an FAQ document will be available, it should not be necessary to use it. We also provide documentation for more complicated features.
-We also want to provide a detailed step by step installation guide for the back-end.
+We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. We also provide documentation for more complicated features.
+We also want to provide a detailed step by step installation guide for the back-end which includes an automaated installer script and helpful information in general.
 
-#### 3.2.1 No training time needed
-Our goal is that a user installs the android application, opens it and is able to use all features without any explanation or help. This includes external documents like a FAQ or other types of tutorials.
-
-#### 3.2.2 Familiar Feeling
-We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the app without having to get to know new interfaces.
+#### 3.2.1 Familiar Feeling
+We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the app without having to get to know new interfaces. Users are not required to have any knowledge about the underlying mechanisms, it should just work.
 
 ### 3.3 Reliability
 
 #### 3.3.1 Availability
-The server shall be available 95% of the time. This also means we have to figure out the "rush hours" of our app because the downtime of the server is only tolerable when as few as possible players want to use the app.
+Because we only provide the software itself and *not* some kind of hosting service, every user is responsible for his own back-end. Nevertheless we will try to get the best performance possible for our back-end.
+Due to the fact that all of our components use docker for deployment, it is very easy to setup some kind of load balancing mechanism.
 
-#### 3.3.2 Defect Rate
-Our goal is that we have no loss of any data. This is important so that the game sessions can carry on, even after a downtime of the server.
+#### 3.3.1 Simple versioning
+We will provide the following versions for our software:
+
+* **Stable** - Well tested version which works on the latest Android/Java version.
+* **Development** - This version contains experimental features which were not fully tested and is ment to be used in production.
+* **Nightly** - This is a daily build which is not guaranteed to work at all. Use this build if you want the latest experimental features.
 
 ### 3.4 Perfomance
 
 #### 3.4.1 Capacity
-The system should be able to manage thousands of requests. For the back-end bandwidth will be pretty important if many users upload or download files simultaneously.
+The system should be able to manage thousands of requests even though this scenario is unlikely for a self host back-end. Bandwidth will be pretty important if many users upload or download files simultaneously.
 
 #### 3.4.2 Storage 
 Smartphones don't provide much storage. Therefore we are aiming to keep the needed storage as small as possible. Before the files are encrypted and uploaded to the server the app uses a general puropose compression algorithm in order to reduce the file size.
@@ -180,6 +179,7 @@ Pull requests and code reviews will ensure that we adhere to these standards.
 
 #### 3.5.2 Testing Strategy
 The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly and it will be easy to locate the error.
+On each pull request all tests are ran automatically to ensure that the change did not broke anything.  
 
 ### 3.6 Design Constraints
 We are trying to provide a modern and easy to handle design for the UI aswell as for the architecture of our application. To achieve that the functionalities will be kept as modular as possible.
@@ -219,13 +219,13 @@ The server and hardware will communicate using the https/websocket protocol.
 ### 3.10 Licensing Requirements
 
 ### 3.11 Legal, Copyright, and Other Notices
-The logo is licensed to the Common Playground Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
+tbd
 
 ### 3.12 Applicable Standards
 The development will follow the common clean code standards and naming conventions. Also we will create a definition of d which will be added here as soon as its complete.
 
 ## 4. Supporting Information
-For any further information you can contact the Common Playground Team or check our [Blog](https://vaultionizer.com). 
+For any further information you can contact the Vaultionizer Team or check our [Blog](https://vaultionizer.com). 
 The Team Members are:
 - Johannes Quast
 - Julien Meier
