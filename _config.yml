@@ -32,7 +32,6 @@ remote_theme: pmarsceill/just-the-docs
 color_scheme: light
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
 
 search_enabled: true
 aux_links_new_tab: true
