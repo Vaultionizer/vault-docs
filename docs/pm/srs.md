@@ -61,7 +61,7 @@ We will only provide a demo back-end for all users that want to try our app, but
 
 ### 2.2 Use Case Diagram
 
-![OUCD](./../../img/UCV.svg)
+![OUCD](./../../img/use_cases/overall_use_case.svg)
 
 - Green: Planned until end of December
 - White: Planned until end of June (second semester)

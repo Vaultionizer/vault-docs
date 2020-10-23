@@ -1,0 +1,1 @@
+![Download file AD](../../../img/use_cases/uc_download_file.svg)
