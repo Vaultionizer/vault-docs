@@ -1,0 +1,1 @@
+![View file structure AD](../../../img/use_cases/uc_show_file_structure.svg)

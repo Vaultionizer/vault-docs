@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2020-10-23T19:21:37.895Z" agent="5.0 (X11)" etag="DMJ_ZP5M0ixE8f7iwU4G" version="13.8.1" type="github">
+  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+    <mxGraphModel dx="3231" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-137" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="-180" y="60" width="670" height="1890" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-64" value="Click on files overview tab" style="rounded=0;whiteSpace=wrap;html=1;" parent="jn4TW-u3W-nK7IEm40rL-137" vertex="1">
+          <mxGeometry x="325" y="70" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-66" value="Fetch reference table from server" style="rounded=0;whiteSpace=wrap;html=1;" parent="jn4TW-u3W-nK7IEm40rL-137" vertex="1">
+          <mxGeometry x="320" y="140" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#000000;" parent="jn4TW-u3W-nK7IEm40rL-137" source="jn4TW-u3W-nK7IEm40rL-64" target="jn4TW-u3W-nK7IEm40rL-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-134" value="Vaultionizer App (vault-android-app)" style="swimlane;strokeWidth=3;" parent="jn4TW-u3W-nK7IEm40rL-137" vertex="1">
+          <mxGeometry width="670" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-138" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;fillColor=#000000;strokeColor=#FF0000;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="180" y="75" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-17" value="Decrypt reference table" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="120" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-19" value="Validate file against JSON schema for reference table" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="120" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-17" target="pSzkmB9aMPkvjZgNoa08-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-27" target="pSzkmB9aMPkvjZgNoa08-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-27" value="Save file to local file system" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="120" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-23" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="140" y="580" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-19" target="pSzkmB9aMPkvjZgNoa08-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-28" value="[JSON OK]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-23" target="pSzkmB9aMPkvjZgNoa08-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-29" value="Extract file metadata from JSON" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="120" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-31" target="pSzkmB9aMPkvjZgNoa08-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-31" value="Display file structure" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="120" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-29" target="pSzkmB9aMPkvjZgNoa08-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-25" target="pSzkmB9aMPkvjZgNoa08-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-25" value="tbd" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="275" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-26" value="[Invalid JSON]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-23" target="pSzkmB9aMPkvjZgNoa08-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-34" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="320" y="1000" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="jn4TW-u3W-nK7IEm40rL-134" source="pSzkmB9aMPkvjZgNoa08-37" target="pSzkmB9aMPkvjZgNoa08-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-37" value="Show message &quot;No files&quot;" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-134" vertex="1">
+          <mxGeometry x="420" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;strokeColor=#000000;" parent="jn4TW-u3W-nK7IEm40rL-137" source="jn4TW-u3W-nK7IEm40rL-138" target="jn4TW-u3W-nK7IEm40rL-64" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="jn4TW-u3W-nK7IEm40rL-66" target="pSzkmB9aMPkvjZgNoa08-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pSzkmB9aMPkvjZgNoa08-15" target="pSzkmB9aMPkvjZgNoa08-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jn4TW-u3W-nK7IEm40rL-135" value="Vaultionizer Server (vault-server)" style="swimlane;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="490" y="60" width="450" height="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-5" value="Query user reference table file location from DB" style="rounded=0;whiteSpace=wrap;html=1;" parent="jn4TW-u3W-nK7IEm40rL-135" vertex="1">
+          <mxGeometry x="300" y="140" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-13" value="Send status code &lt;span id=&quot;code204&quot;&gt;&lt;/span&gt;204" style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-135" vertex="1">
+          <mxGeometry x="50" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-15" value="Send reference table " style="whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-135" vertex="1">
+          <mxGeometry x="50" y="265" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-9" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="jn4TW-u3W-nK7IEm40rL-135" vertex="1">
+          <mxGeometry x="315" y="255" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-14" value="[File doesn´t exist]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="jn4TW-u3W-nK7IEm40rL-135" source="pSzkmB9aMPkvjZgNoa08-9" target="pSzkmB9aMPkvjZgNoa08-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-16" value="[File does exists]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="jn4TW-u3W-nK7IEm40rL-135" source="pSzkmB9aMPkvjZgNoa08-9" target="pSzkmB9aMPkvjZgNoa08-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="jn4TW-u3W-nK7IEm40rL-135" source="pSzkmB9aMPkvjZgNoa08-5" target="pSzkmB9aMPkvjZgNoa08-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pSzkmB9aMPkvjZgNoa08-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pSzkmB9aMPkvjZgNoa08-13" target="pSzkmB9aMPkvjZgNoa08-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
