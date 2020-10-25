@@ -1,1 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2020-10-25T17:35:42.675Z" agent="5.0 (X11)" version="13.8.2" etag="su6orTYiqxZLK0bWrQn_" type="github"><diagram id="oNBS1kDKNzosIgqrIPIM">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-10-25T17:49:25.273Z" agent="5.0 (X11)" etag="nHtTE9t42gtyd9qWlFHu" version="13.8.2" type="github">
+  <diagram id="oNBS1kDKNzosIgqrIPIM" name="Page-1">
+    <mxGraphModel dx="1718" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-2" target="XHGZSOG4ydGeJejNWNYd-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-2" value="Press Add new space button" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-4" target="XHGZSOG4ydGeJejNWNYd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;fillColor=#000000;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="235" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-6" target="XHGZSOG4ydGeJejNWNYd-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-6" value="Insert space name" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-8" target="XHGZSOG4ydGeJejNWNYd-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-8" value="Decide if shared vault" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-9" target="XHGZSOG4ydGeJejNWNYd-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-9" value="Press &quot;Create&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-11" target="XHGZSOG4ydGeJejNWNYd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-11" value="Choose encryption algorithm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-16" target="XHGZSOG4ydGeJejNWNYd-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-16" value="Create empty encrypted reference table" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-20" target="XHGZSOG4ydGeJejNWNYd-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-20" value="Send HTTP request with user ID, reference table, is shared space, auth key" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="880" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-37" target="XHGZSOG4ydGeJejNWNYd-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="XHGZSOG4ydGeJejNWNYd-39" target="XHGZSOG4ydGeJejNWNYd-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-43" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="1220" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-47" value="Vaultionizer App (vault-android-app)" style="swimlane;rounded=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="160" width="415" height="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-39" value="Store space ID locally" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="XHGZSOG4ydGeJejNWNYd-47">
+          <mxGeometry x="150" y="940" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-48" value="Vaultionizer Server (vault-server)" style="swimlane;rounded=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="415" height="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-31" value="Create space with properties in DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="XHGZSOG4ydGeJejNWNYd-48">
+          <mxGeometry x="142.5" y="720" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-35" value="Store reference table file in space folder" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="XHGZSOG4ydGeJejNWNYd-48">
+          <mxGeometry x="142.5" y="830" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="XHGZSOG4ydGeJejNWNYd-48" source="XHGZSOG4ydGeJejNWNYd-31" target="XHGZSOG4ydGeJejNWNYd-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-37" value="Send space ID to user" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="XHGZSOG4ydGeJejNWNYd-48">
+          <mxGeometry x="142.5" y="940" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XHGZSOG4ydGeJejNWNYd-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="XHGZSOG4ydGeJejNWNYd-48" source="XHGZSOG4ydGeJejNWNYd-35" target="XHGZSOG4ydGeJejNWNYd-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
