@@ -18,17 +18,23 @@ grand_parent: Project management
 
 ## Show file structure
 ### Brief Description
+The file structure is stored inside an encrypted reference table (JSON file) and stored on the server in order to be able to synchronize the files between multiple devices.
+After the client downloaded the table and successfully decrypted the file, parsing of the file structure becomes possible.
 
 ### Mockup
+![Activity Diagram for use show file structure](../../../img/use_cases/mockups/FileViewer.png)
 
 ## Flow of Evenets
 ### Basic Flow
+![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
 
 ### Alternative Flow
 
 ## Special Requirements
 
 ## Preconditions
+* User is logged in
+* User has valid reference file stored encrypted on the server
 
 ## Postconditions
 
