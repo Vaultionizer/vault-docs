@@ -7,7 +7,7 @@ parent: Use cases
 grand_parent: Project management
 ---
 
-# Use Case Specification: Show file structure
+# Use Case Specification: Create Space
 {: .no_toc }
 
 ## Table of contents
@@ -16,7 +16,7 @@ grand_parent: Project management
 1. TOC
 {:toc}
 
-## Show file structure
+## Create Space
 ### Brief Description
 
 ### Mockup
