@@ -18,18 +18,26 @@ grand_parent: Project management
 
 ## Create Space
 ### Brief Description
+In order to create a space the user has to specify certain properties (e.g. local space name and encryption algorithm for the keys).
+The properties are then tranfered to the server via a HTTP Rest-call. 
 
 ### Mockup
+![Activity Diagram for use case create space](../../../img/use_cases/mockups/AddNewSpace.png)
 
 ## Flow of Evenets
 ### Basic Flow
+![Activity Diagram for use case create space](../../../img/use_cases/activity_diagrams/ad_create_space.svg)
 
 ### Alternative Flow
+n/a
 
 ## Special Requirements
 
 ## Preconditions
+* User is logged in
 
 ## Postconditions
+n/a
 
 ## Extension Points
+n/a
