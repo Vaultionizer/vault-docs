@@ -22,3 +22,4 @@ Topic like the software architecture are also covered.
 # More information
 For all those that want to follow the development progress or simply want to ask questions can have a look at our [website](https://vaultionizer.com).
 We provide additional information e.g. a weekly blog or FAQ there.
+For technical details you can refer to our [technical blog](https://vaultionizer.com/category/vault/technical/).
