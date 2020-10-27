@@ -108,6 +108,7 @@ Of course these information will get encrypted too.
 
 #### 3.1.4 View file structure
 The user can view the file structure without downloading any files.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_show_file_structure.html).
 
 #### 3.1.5 Download file
 The user can download individual files. They get decrypted locally in order to provide strong security.
@@ -130,6 +131,7 @@ Users can delete exisiting keys.
 
 #### 3.1.13 Create space
 Users on the same back-end have the possibility to create a shared space. It is pretty similar to a shared folder on Dropbox or Google Drive. The space is, of course, encrypted via a shared key. The owner of the space must exchange this key with other users via a method described in 3.1.15.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_create_space.html).
 
 #### 3.1.14 Delete Space
 Space owners can delete their spaces.
