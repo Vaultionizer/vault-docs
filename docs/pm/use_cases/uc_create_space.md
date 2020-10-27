@@ -32,6 +32,7 @@ The properties are then tranfered to the server via a HTTP Rest-call.
 n/a
 
 ## Special Requirements
+n/a
 
 ## Preconditions
 * User is logged in
