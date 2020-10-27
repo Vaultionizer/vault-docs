@@ -29,13 +29,17 @@ After the client downloaded the table and successfully decrypted the file, parsi
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
 
 ### Alternative Flow
+n/a
 
 ## Special Requirements
+n/a
 
 ## Preconditions
 * User is logged in
 * User has valid reference file stored encrypted on the server
 
 ## Postconditions
+n/a
 
 ## Extension Points
+n/a
