@@ -28,6 +28,9 @@ The properties are then tranfered to the server via a HTTP Rest-call.
 ### Basic Flow
 ![Activity Diagram for use case create space](../../../img/use_cases/activity_diagrams/ad_create_space.svg)
 
+## Gherkin file
+You can find the feature file for this use case [here](https://github.com/Vaultionizer/vault-android-app/blob/master/app/src/test/java/com/vaultionizer/vaultapp/features/Add-new-vault.feature).
+
 ### Alternative Flow
 n/a
 
