@@ -28,6 +28,9 @@ After the client downloaded the table and successfully decrypted the file, parsi
 ### Basic Flow
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
 
+## Gherkin file
+You can find the feature file for this use case [here](https://github.com/Vaultionizer/vault-android-app/blob/master/app/src/test/java/com/vaultionizer/vaultapp/features/FileViewerUC.feature).
+
 ### Alternative Flow
 n/a
 
