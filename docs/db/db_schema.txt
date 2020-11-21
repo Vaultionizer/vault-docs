@@ -1,0 +1,69 @@
+
+CREATE TABLE public.file_model (
+    fileid bigint NOT NULL,
+    save_index bigint NOT NULL,
+    spaceid bigint NOT NULL,
+    status integer NOT NULL,
+    CONSTRAINT file_model_save_index_check CHECK ((save_index >= 0)),
+    CONSTRAINT file_model_spaceid_check CHECK ((spaceid >= 0))
+);
+
+
+
+CREATE TABLE public.pending_upload_model (
+    uploadid bigint NOT NULL,
+    permitted_sessionid bigint NOT NULL,
+    requested timestamp without time zone,
+    save_index bigint NOT NULL,
+    spaceid bigint NOT NULL,
+    CONSTRAINT pending_upload_model_permitted_sessionid_check CHECK ((permitted_sessionid >= 0)),
+    CONSTRAINT pending_upload_model_save_index_check CHECK ((save_index >= 0)),
+    CONSTRAINT pending_upload_model_spaceid_check CHECK ((spaceid >= 0))
+);
+
+
+CREATE TABLE public.ref_files_model (
+    ref_file_id bigint NOT NULL,
+    content text NOT NULL,
+    last_updated_content timestamp without time zone NOT NULL,
+    save_index bigint NOT NULL,
+    CONSTRAINT ref_files_model_save_index_check CHECK ((save_index >= 0))
+);
+
+
+
+CREATE TABLE public.session_model (
+    id bigint NOT NULL,
+    last_query timestamp without time zone,
+    session_key character varying(255) NOT NULL,
+    userid bigint NOT NULL,
+    web_socket_token character varying(255) NOT NULL
+);
+
+
+
+CREATE TABLE public.space_model (
+    spaceid bigint NOT NULL,
+    auth_key character varying(255),
+    creatorid bigint NOT NULL,
+    is_private_space boolean NOT NULL,
+    ref_fileid bigint NOT NULL
+);
+
+
+
+CREATE TABLE public.user_access_model (
+    id bigint NOT NULL,
+    spaceid bigint NOT NULL,
+    userid bigint NOT NULL
+);
+
+
+
+CREATE TABLE public.users (
+    id bigint NOT NULL,
+    key character varying(255) NOT NULL,
+    username character varying(255) NOT NULL
+);
+
+
