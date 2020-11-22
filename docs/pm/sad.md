@@ -171,8 +171,11 @@ tbd
 
 ### 8.1 Overview
 
-You can have a look at the class diagram - for a more detailed overview:
+You can have a look at the class diagram of the backend - for a more detailed overview:
 ![Backend class diagram](../../img/backend/vault-server-overkill.svg)
+
+The class diagram for the frontend is not finished yet because it includes auto-generated classes which are not that important in order to understand the overall architecture.
+![Frontend class diagram](../../img/frontend/vault-app-full.svg)
 
 ### 8.2 Layers
 
