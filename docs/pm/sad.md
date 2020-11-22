@@ -196,13 +196,3 @@ tbd
 
 Our goal is to make the backend with all its components as maintainable as possible.
 Because the backend consists of many separated and easily exchangeable layers it is very easy to switch e.g. between databases.
-
-![](Software%20Architecture%20Document_files/artfc_w.gif)
-[Artifacts](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ovu_arts.htm)
-\> ![](Software%20Architecture%20Document_files/artfc_y.gif) [Analysis &
-Design Artifact
-Set](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ars_dsg.htm)
-\> ![](Software%20Architecture%20Document_files/ar_doc.gif) [Software
-Architecture
-Document](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ar_sadoc.htm)
-\> ![](Software%20Architecture%20Document_files/ie.gif) rup\_sad.htm
