@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.vaultionizer.vaultserver</OriginalElement>
+  <nodes>
+    <node x="5826.438381974536" y="210.0">com.vaultionizer.vaultserver.service.UserAccessService</node>
+    <node x="5347.938381974536" y="210.0">com.vaultionizer.vaultserver.model.dto.GetSpacesResponseDto</node>
+    <node x="0.0" y="1645.0">com.vaultionizer.vaultserver.config.SecurityConfig</node>
+    <node x="2475.4155654287224" y="90.0">com.vaultionizer.vaultserver.model.db.FileModel</node>
+    <node x="2644.7550125313273" y="210.0">com.vaultionizer.vaultserver.resource.SessionRepository</node>
+    <node x="621.0" y="880.0">com.vaultionizer.vaultserver.model.dto.LoginUserResponseDto</node>
+    <node x="4441.271715307869" y="1420.0">com.vaultionizer.vaultserver.controllers.SpaceControllerTest</node>
+    <node x="2061.8176217406185" y="1570.0">com.vaultionizer.vaultserver.controllers.UserControllerTest</node>
+    <node x="1376.0079365079362" y="90.0">com.vaultionizer.vaultserver.helpers.Config</node>
+    <node x="4064.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.AuthWrapperDto</node>
+    <node x="0.0" y="420.0">com.vaultionizer.vaultserver.controllers.MiscControllerTest</node>
+    <node x="205.0" y="1645.0">com.vaultionizer.vaultserver.config.SwaggerConfig</node>
+    <node x="2364.9155654287224" y="210.0">com.vaultionizer.vaultserver.resource.FileRepository</node>
+    <node x="1628.5514069612464" y="420.0">com.vaultionizer.vaultserver.model.dto.WebsocketFileDto</node>
+    <node x="4368.688381974536" y="880.0">com.vaultionizer.vaultserver.controllers.SpaceController</node>
+    <node x="3876.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.FileDownloadDto</node>
+    <node x="4973.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.ReadRefFileDto</node>
+    <node x="4597.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.CreateSpaceDto</node>
+    <node x="472.8512202106622" y="210.0">com.vaultionizer.vaultserver.model.db.UserModel</node>
+    <node x="1204.0" y="880.0">com.vaultionizer.vaultserver.jobs.PendingUploadJob</node>
+    <node x="2277.863581336578" y="880.0">com.vaultionizer.vaultserver.jobs.SessionJob</node>
+    <node x="2365.9155654287224" y="0.0">com.vaultionizer.vaultserver.helpers.FileStatus</node>
+    <node x="2425.863581336578" y="880.0">com.vaultionizer.vaultserver.config.WebSocketChannelFilter</node>
+    <node x="3388.6883819745362" y="90.0">com.vaultionizer.vaultserver.resource.RefFileRepository</node>
+    <node x="1292.0079365079364" y="0.0">com.vaultionizer.vaultserver.model.dto.GetVersionResponseDto</node>
+    <node x="3532.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.FileUploadDto</node>
+    <node x="1397.2260101358493" y="420.0">com.vaultionizer.vaultserver.service.PendingUploadService</node>
+    <node x="4244.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyDto</node>
+    <node x="2674.5050125313273" y="420.0">com.vaultionizer.vaultserver.service.SessionService</node>
+    <node x="2755.2550125313273" y="0.0">com.vaultionizer.vaultserver.helpers.SessionTokenGen</node>
+    <node x="1873.0741342339734" y="210.0">com.vaultionizer.vaultserver.resource.PendingUploadRepository</node>
+    <node x="1724.63510104494" y="90.0">com.vaultionizer.vaultserver.model.db.PendingUploadModel</node>
+    <node x="465.0" y="880.0">com.vaultionizer.vaultserver.service.UserService</node>
+    <node x="2767.2550125313273" y="90.0">com.vaultionizer.vaultserver.model.db.SessionModel</node>
+    <node x="5620.932616309329" y="90.0">com.vaultionizer.vaultserver.model.db.SpaceModel</node>
+    <node x="5839.688381974536" y="0.0">com.vaultionizer.vaultserver.model.db.UserAccessModel</node>
+    <node x="3704.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.DeleteFileDto</node>
+    <node x="4212.470722260195" y="210.0">com.vaultionizer.vaultserver.model.dto.GenericAuthDto</node>
+    <node x="16.0" y="210.0">com.vaultionizer.vaultserver.controllers.MiscController</node>
+    <node x="3123.1883819745362" y="90.0">com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyResponseDto</node>
+    <node x="5449.445774204067" y="420.0">com.vaultionizer.vaultserver.service.SpaceService</node>
+    <node x="1537.7579365079362" y="880.0">com.vaultionizer.vaultserver.controllers.WebsocketController</node>
+    <node x="4903.688381974536" y="880.0">com.vaultionizer.vaultserver.controllers.RefFileController</node>
+    <node x="2929.488381974536" y="880.0">com.vaultionizer.vaultserver.controllers.SessionController</node>
+    <node x="5159.938381974536" y="210.0">com.vaultionizer.vaultserver.resource.SpaceRepository</node>
+    <node x="2730.6893389123356" y="1420.0">com.vaultionizer.vaultserver.controllers.FileController</node>
+    <node x="2522.083278306275" y="1420.0">com.vaultionizer.vaultserver.config.WebSocketConfig</node>
+    <node x="3400.6883819745362" y="210.0">com.vaultionizer.vaultserver.service.RefFileService</node>
+    <node x="4777.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.UpdateRefFileDto</node>
+    <node x="4432.725577096061" y="420.0">com.vaultionizer.vaultserver.model.dto.JoinSpaceDto</node>
+    <node x="5768.932616309329" y="90.0">com.vaultionizer.vaultserver.resource.UserAccessRepository</node>
+    <node x="3432.2280708547837" y="0.0">com.vaultionizer.vaultserver.model.db.RefFilesModel</node>
+    <node x="213.0" y="880.0">com.vaultionizer.vaultserver.model.dto.RegisterUserResponseDto</node>
+    <node x="453.0" y="420.0">com.vaultionizer.vaultserver.resource.UserRepository</node>
+    <node x="850.0" y="880.0">com.vaultionizer.vaultserver.model.dto.RegisterUserDto</node>
+    <node x="1039.0" y="880.0">com.vaultionizer.vaultserver.model.dto.LoginUserDto</node>
+    <node x="2371.0822320953894" y="420.0">com.vaultionizer.vaultserver.service.FileService</node>
+    <node x="1785.5160534258926" y="1420.0">com.vaultionizer.vaultserver.controllers.UserController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.vaultionizer.vaultserver.resource.SessionRepository" target="com.vaultionizer.vaultserver.model.db.SessionModel">
+      <point x="0.0" y="-15.0" />
+      <point x="2736.7550125313273" y="190.0" />
+      <point x="2810.4550125313276" y="190.0" />
+      <point x="-28.799999999999955" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SessionService" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-64.0" y="-15.0" />
+      <point x="2690.5050125313273" y="400.0" />
+      <point x="2557.4155654287224" y="400.0" />
+      <point x="2557.4155654287224" y="140.0" />
+      <point x="1467.6443001443" y="140.0" />
+      <point x="43.63636363636374" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.DeleteFileDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-38.0" y="-15.0" />
+      <point x="3742.725577096061" y="350.0" />
+      <point x="4240.470722260195" y="350.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="42.105263157895024" y="-15.0" />
+      <point x="4583.376978465764" y="1310.0" />
+      <point x="5554.194312215763" y="1310.0" />
+      <point x="5554.194312215763" y="790.0" />
+      <point x="5563.445774204067" y="790.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.service.RefFileService">
+      <point x="-65.45454545454504" y="-15.0" />
+      <point x="5455.991228749521" y="300.0" />
+      <point x="3536.6883819745362" y="300.0" />
+      <point x="56.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="64.39999999999964" y="-15.0" />
+      <point x="5060.088381974536" y="850.0" />
+      <point x="5897.778398682974" y="850.0" />
+      <point x="5897.778398682974" y="390.0" />
+      <point x="5885.581239117393" y="390.0" />
+      <point x="-32.85714285714312" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.model.dto.LoginUserResponseDto">
+      <point x="-48.0" y="-15.0" />
+      <point x="2109.8176217406185" y="1510.0" />
+      <point x="703.8946311950285" y="1510.0" />
+      <point x="703.8946311950285" y="1400.0" />
+      <point x="655.666666666667" y="1400.0" />
+      <point x="-69.33333333333303" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.model.db.UserModel">
+      <point x="-90.66666666666652" y="-15.0" />
+      <point x="2067.150955073952" y="1550.0" />
+      <point x="202.5" y="1550.0" />
+      <point x="202.5" y="390.0" />
+      <point x="484.8512202106622" y="390.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.model.db.SpaceModel">
+      <point x="63.157894736842536" y="-15.0" />
+      <point x="4604.429610044712" y="1330.0" />
+      <point x="5713.081239117394" y="1330.0" />
+      <point x="5713.081239117394" y="180.0" />
+      <point x="5721.504044880758" y="180.0" />
+      <point x="36.57142857142844" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.model.dto.FileDownloadDto">
+      <point x="40.0" y="-15.0" />
+      <point x="2850.6893389123356" y="1210.0" />
+      <point x="3960.725577096061" y="1210.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.JoinSpaceDto">
+      <point x="3.5" y="-15.0" />
+      <point x="4456.188381974536" y="710.0" />
+      <point x="4504.725577096061" y="710.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.PendingUploadService" target="com.vaultionizer.vaultserver.model.db.PendingUploadModel">
+      <point x="0.0" y="-15.0" />
+      <point x="1501.2260101358493" y="380.0" />
+      <point x="1862.5741342339734" y="380.0" />
+      <point x="1862.5741342339734" y="150.0" />
+      <point x="1820.63510104494" y="150.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-80.5" y="-15.0" />
+      <point x="4372.188381974536" y="630.0" />
+      <point x="1582.940295850135" y="630.0" />
+      <point x="81.71428571428578" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.FileUploadDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-38.0" y="-15.0" />
+      <point x="3570.725577096061" y="330.0" />
+      <point x="4224.470722260195" y="330.0" />
+      <point x="-68.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.CreateSpaceDto">
+      <point x="17.5" y="-15.0" />
+      <point x="4470.188381974536" y="730.0" />
+      <point x="4677.725577096061" y="730.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.RefFileService">
+      <point x="13.333333333333485" y="-15.0" />
+      <point x="2824.022672245669" y="1170.0" />
+      <point x="3230.2280708547837" y="1170.0" />
+      <point x="3230.2280708547837" y="380.0" />
+      <point x="3424.6883819745362" y="380.0" />
+      <point x="-56.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.FileService">
+      <point x="-66.5" y="-15.0" />
+      <point x="4386.188381974536" y="610.0" />
+      <point x="2481.5822320953894" y="610.0" />
+      <point x="42.5" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="52.36363636363603" y="-15.0" />
+      <point x="5573.809410567703" y="380.0" />
+      <point x="5833.009810545965" y="380.0" />
+      <point x="-85.42857142857156" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.UserService" target="com.vaultionizer.vaultserver.resource.UserRepository">
+      <point x="-17.0" y="-15.0" />
+      <point x="516.0" y="860.0" />
+      <point x="493.0" y="860.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.FileService">
+      <point x="-22.22222222222217" y="-15.0" />
+      <point x="2788.4671166901135" y="1040.0" />
+      <point x="2133.351912011751" y="1040.0" />
+      <point x="2133.351912011751" y="720.0" />
+      <point x="2430.5822320953894" y="720.0" />
+      <point x="-8.5" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.model.dto.GetSpacesResponseDto">
+      <point x="-13.090909090909008" y="-15.0" />
+      <point x="5508.354865113157" y="260.0" />
+      <point x="5477.938381974536" y="260.0" />
+      <point x="26.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.RefFileService" target="com.vaultionizer.vaultserver.model.db.RefFilesModel">
+      <point x="60.0" y="-15.0" />
+      <point x="3540.6883819745362" y="190.0" />
+      <point x="3630.9780708547837" y="190.0" />
+      <point x="3630.9780708547837" y="70.0" />
+      <point x="3520.8947375214507" y="70.0" />
+      <point x="12.66666666666697" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="80.0" y="-15.0" />
+      <point x="2237.8176217406185" y="1540.0" />
+      <point x="5978.860270028004" y="1540.0" />
+      <point x="5978.860270028004" y="390.0" />
+      <point x="5990.724096260251" y="390.0" />
+      <point x="72.28571428571468" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.controllers.WebsocketController">
+      <point x="-57.77777777777783" y="-15.0" />
+      <point x="2752.911561134558" y="1080.0" />
+      <point x="1587.7579365079362" y="1080.0" />
+      <point x="-50.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.resource.SpaceRepository">
+      <point x="10.526315789473301" y="-15.0" />
+      <point x="4551.798031097343" y="1230.0" />
+      <point x="5271.41787548521" y="1230.0" />
+      <point x="5271.41787548521" y="390.0" />
+      <point x="5229.938381974536" y="390.0" />
+      <point x="-14.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.service.RefFileService">
+      <point x="-27.600000000000364" y="-15.0" />
+      <point x="4968.088381974536" y="480.0" />
+      <point x="3508.6883819745362" y="480.0" />
+      <point x="3508.6883819745362" y="310.0" />
+      <point x="3520.6883819745362" y="310.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="-42.105263157895024" y="-15.0" />
+      <point x="4499.166452149974" y="970.0" />
+      <point x="2918.988381974536" y="970.0" />
+      <point x="2918.988381974536" y="820.0" />
+      <point x="2787.2322852586003" y="820.0" />
+      <point x="32.72727272727275" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-37.333333333333485" y="-15.0" />
+      <point x="2120.484288407285" y="1500.0" />
+      <point x="1390.4999999999998" y="1500.0" />
+      <point x="1390.4999999999998" y="810.0" />
+      <point x="1434.3688672787064" y="810.0" />
+      <point x="-66.85714285714289" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.model.dto.FileUploadDto">
+      <point x="22.22222222222217" y="-15.0" />
+      <point x="2832.911561134558" y="1190.0" />
+      <point x="3608.725577096061" y="1190.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.model.db.RefFilesModel">
+      <point x="52.631578947368325" y="-15.0" />
+      <point x="4593.903294255238" y="1320.0" />
+      <point x="5654.8969020236145" y="1320.0" />
+      <point x="5654.8969020236145" y="330.0" />
+      <point x="5610.432616309329" y="330.0" />
+      <point x="5610.432616309329" y="50.0" />
+      <point x="3571.5614041881167" y="50.0" />
+      <point x="63.33333333333303" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.jobs.PendingUploadJob" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-58.666666666666515" y="-15.0" />
+      <point x="1233.3333333333335" y="780.0" />
+      <point x="1330.508267558665" y="780.0" />
+      <point x="1330.508267558665" y="180.0" />
+      <point x="1415.2806637806634" y="180.0" />
+      <point x="-8.727272727272748" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.helpers.Config" target="com.vaultionizer.vaultserver.model.dto.GetVersionResponseDto">
+      <point x="-24.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.WebsocketController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="62.5" y="-15.0" />
+      <point x="1700.2579365079362" y="760.0" />
+      <point x="2678.1413761676913" y="760.0" />
+      <point x="-76.36363636363626" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="56.66666666666697" y="-15.0" />
+      <point x="1922.1827200925595" y="1260.0" />
+      <point x="5504.077270863425" y="1260.0" />
+      <point x="-18.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-42.0" y="-15.0" />
+      <point x="4286.725577096061" y="400.0" />
+      <point x="4288.470722260195" y="400.0" />
+      <point x="-4.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.service.UserService">
+      <point x="-58.666666666666515" y="-15.0" />
+      <point x="2099.150955073952" y="1520.0" />
+      <point x="516.0" y="1520.0" />
+      <point x="-17.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.jobs.SessionJob" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="0.0" y="-15.0" />
+      <point x="2341.863581336578" y="780.0" />
+      <point x="2692.686830713146" y="780.0" />
+      <point x="-61.818181818181756" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SessionService" target="com.vaultionizer.vaultserver.model.db.SessionModel">
+      <point x="32.0" y="-15.0" />
+      <point x="2786.5050125313273" y="390.0" />
+      <point x="2839.2550125313273" y="390.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.MiscController" target="com.vaultionizer.vaultserver.model.dto.GetVersionResponseDto">
+      <point x="-40.0" y="-15.0" />
+      <point x="56.0" y="70.0" />
+      <point x="1328.0079365079364" y="70.0" />
+      <point x="-72.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-10.0" y="-15.0" />
+      <point x="1855.5160534258926" y="1290.0" />
+      <point x="1436.4204337992621" y="1290.0" />
+      <point x="1436.4204337992621" y="830.0" />
+      <point x="1464.0831529929922" y="830.0" />
+      <point x="-37.14285714285711" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.model.db.SpaceModel">
+      <point x="26.181818181818016" y="-15.0" />
+      <point x="5547.627592385885" y="350.0" />
+      <point x="5671.3180812226565" y="350.0" />
+      <point x="5671.3180812226565" y="190.0" />
+      <point x="5666.6469020236145" y="190.0" />
+      <point x="-18.285714285714675" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="84.21052631578914" y="-15.0" />
+      <point x="4625.482241623658" y="1390.0" />
+      <point x="5957.33395423853" y="1390.0" />
+      <point x="5957.33395423853" y="370.0" />
+      <point x="5964.438381974536" y="370.0" />
+      <point x="46.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="23.33333333333303" y="-15.0" />
+      <point x="1888.8493867592256" y="1180.0" />
+      <point x="3522.225577096061" y="1180.0" />
+      <point x="3522.225577096061" y="320.0" />
+      <point x="4216.470722260195" y="320.0" />
+      <point x="-76.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SessionController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="-61.33333333333326" y="-15.0" />
+      <point x="2960.1550486412025" y="810.0" />
+      <point x="2794.5050125313273" y="810.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.controllers.SpaceController">
+      <point x="37.333333333333485" y="-15.0" />
+      <point x="2195.150955073952" y="1500.0" />
+      <point x="4420.105048641203" y="1500.0" />
+      <point x="4420.105048641203" y="1230.0" />
+      <point x="4438.688381974536" y="1230.0" />
+      <point x="-14.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.config.WebSocketConfig" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-63.0" y="-15.0" />
+      <point x="2543.083278306275" y="1120.0" />
+      <point x="1193.5" y="1120.0" />
+      <point x="1193.5" y="170.0" />
+      <point x="1406.5533910533907" y="170.0" />
+      <point x="-17.454545454545496" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.RefFileService" target="com.vaultionizer.vaultserver.resource.RefFileRepository">
+      <point x="-20.0" y="-15.0" />
+      <point x="3460.6883819745362" y="190.0" />
+      <point x="3434.6883819745362" y="190.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.FileService" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-56.666666666666515" y="-15.0" />
+      <point x="2382.415565428723" y="370.0" />
+      <point x="1823.7786796885193" y="370.0" />
+      <point x="1823.7786796885193" y="160.0" />
+      <point x="1458.917027417027" y="160.0" />
+      <point x="34.909090909090764" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.db.UserModel" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="0.0" y="-15.0" />
+      <point x="532.8512202106622" y="150.0" />
+      <point x="1389.0988455988454" y="150.0" />
+      <point x="-34.90909090909088" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="-82.80000000000018" y="-15.0" />
+      <point x="4912.888381974536" y="510.0" />
+      <point x="2823.595921622237" y="510.0" />
+      <point x="69.09090909090924" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.UpdateRefFileDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-44.0" y="-15.0" />
+      <point x="4821.725577096061" y="340.0" />
+      <point x="4344.470722260195" y="340.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.model.db.SessionModel">
+      <point x="26.666666666666515" y="-15.0" />
+      <point x="2184.484288407285" y="1490.0" />
+      <point x="3123.9883819745364" y="1490.0" />
+      <point x="3123.9883819745364" y="190.0" />
+      <point x="2896.8550125313277" y="190.0" />
+      <point x="57.59999999999991" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="5.333333333333485" y="-15.0" />
+      <point x="2163.150955073952" y="1470.0" />
+      <point x="2720.1893389123356" y="1470.0" />
+      <point x="2720.1893389123356" y="860.0" />
+      <point x="2750.868648894964" y="860.0" />
+      <point x="-3.6363636363637397" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="10.5" y="-15.0" />
+      <point x="4463.188381974536" y="720.0" />
+      <point x="4587.225577096061" y="720.0" />
+      <point x="4587.225577096061" y="370.0" />
+      <point x="4320.470722260195" y="370.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-75.55555555555566" y="-15.0" />
+      <point x="2735.13378335678" y="1100.0" />
+      <point x="1464.583333333333" y="1100.0" />
+      <point x="1464.583333333333" y="850.0" />
+      <point x="1493.7974387072777" y="850.0" />
+      <point x="-7.4285714285715585" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.db.SessionModel" target="com.vaultionizer.vaultserver.helpers.SessionTokenGen">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.model.dto.UpdateRefFileDto">
+      <point x="-9.199999999999818" y="-15.0" />
+      <point x="4986.488381974536" y="470.0" />
+      <point x="4865.725577096061" y="470.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.db.RefFilesModel">
+      <point x="-31.5" y="-15.0" />
+      <point x="4421.188381974536" y="560.0" />
+      <point x="3365.6883819745362" y="560.0" />
+      <point x="3365.6883819745362" y="60.0" />
+      <point x="3444.8947375214507" y="60.0" />
+      <point x="-63.33333333333303" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.UserRepository" target="com.vaultionizer.vaultserver.model.db.UserModel">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.model.dto.RegisterUserResponseDto">
+      <point x="-80.0" y="-15.0" />
+      <point x="2077.8176217406185" y="1540.0" />
+      <point x="345.1446311950285" y="1540.0" />
+      <point x="345.1446311950285" y="1400.0" />
+      <point x="251.66666666666697" y="1400.0" />
+      <point x="-77.33333333333303" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.RegisterUserDto">
+      <point x="-30.0" y="-15.0" />
+      <point x="1835.5160534258926" y="1320.0" />
+      <point x="934.0" y="1320.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="66.66666666666652" y="-15.0" />
+      <point x="2877.356005579002" y="1370.0" />
+      <point x="5937.445065349641" y="1370.0" />
+      <point x="19.714285714285325" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.LoginUserDto">
+      <point x="-16.666666666666515" y="-15.0" />
+      <point x="1848.849386759226" y="1300.0" />
+      <point x="1111.0" y="1300.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.MiscController" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="40.0" y="-15.0" />
+      <point x="136.0" y="140.0" />
+      <point x="1380.3715728715724" y="140.0" />
+      <point x="-43.636363636363626" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.PendingUploadRepository" target="com.vaultionizer.vaultserver.model.db.PendingUploadModel">
+      <point x="0.0" y="-15.0" />
+      <point x="1989.0741342339734" y="190.0" />
+      <point x="1884.63510104494" y="190.0" />
+      <point x="64.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.WebsocketController" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-62.5" y="-15.0" />
+      <point x="1575.2579365079362" y="770.0" />
+      <point x="1523.5117244215635" y="770.0" />
+      <point x="22.28571428571422" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.FileDownloadDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-42.0" y="-15.0" />
+      <point x="3918.725577096061" y="370.0" />
+      <point x="4256.470722260195" y="370.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.FileRepository" target="com.vaultionizer.vaultserver.model.db.FileModel">
+      <point x="0.0" y="-15.0" />
+      <point x="2444.9155654287224" y="190.0" />
+      <point x="2495.4155654287224" y="190.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.PendingUploadService" target="com.vaultionizer.vaultserver.resource.PendingUploadRepository">
+      <point x="41.60000000000002" y="-15.0" />
+      <point x="1542.8260101358492" y="390.0" />
+      <point x="1931.0741342339734" y="390.0" />
+      <point x="-58.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="-84.21052631578914" y="-15.0" />
+      <point x="4457.06118899208" y="1010.0" />
+      <point x="2144.351912011751" y="1010.0" />
+      <point x="2144.351912011751" y="660.0" />
+      <point x="1568.0831529929922" y="660.0" />
+      <point x="66.85714285714289" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.controllers.UserController">
+      <point x="-16.0" y="-15.0" />
+      <point x="2141.8176217406185" y="1480.0" />
+      <point x="1825.5160534258926" y="1480.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.jobs.SessionJob" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-42.66666666666674" y="-15.0" />
+      <point x="2299.196914669911" y="650.0" />
+      <point x="1615.7260101358493" y="650.0" />
+      <point x="1615.7260101358493" y="180.0" />
+      <point x="1441.4624819624817" y="180.0" />
+      <point x="17.454545454545496" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.model.dto.DeleteFileDto">
+      <point x="31.111111111111313" y="-15.0" />
+      <point x="2841.800450023447" y="1200.0" />
+      <point x="3780.725577096061" y="1200.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.db.SpaceModel">
+      <point x="66.5" y="-15.0" />
+      <point x="4519.188381974536" y="820.0" />
+      <point x="5636.8969020236145" y="820.0" />
+      <point x="5636.8969020236145" y="370.0" />
+      <point x="5693.3180812226565" y="370.0" />
+      <point x="5693.3180812226565" y="190.0" />
+      <point x="5703.218330595044" y="190.0" />
+      <point x="18.285714285714675" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.AuthWrapperDto">
+      <point x="30.0" y="-15.0" />
+      <point x="1895.5160534258926" y="1220.0" />
+      <point x="4144.725577096061" y="1220.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.FileService">
+      <point x="-63.157894736842536" y="-15.0" />
+      <point x="4478.113820571027" y="990.0" />
+      <point x="2165.404543590698" y="990.0" />
+      <point x="2165.404543590698" y="740.0" />
+      <point x="2464.5822320953894" y="740.0" />
+      <point x="25.5" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.resource.SpaceRepository">
+      <point x="31.5" y="-15.0" />
+      <point x="4484.188381974536" y="750.0" />
+      <point x="5169.212419201323" y="750.0" />
+      <point x="5169.212419201323" y="390.0" />
+      <point x="5201.938381974536" y="390.0" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.LoginUserResponseDto">
+      <point x="-50.0" y="-15.0" />
+      <point x="1815.5160534258926" y="1350.0" />
+      <point x="725.0" y="1350.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.WebsocketController" target="com.vaultionizer.vaultserver.model.dto.WebsocketFileDto">
+      <point x="-12.5" y="-15.0" />
+      <point x="1625.2579365079362" y="680.0" />
+      <point x="1716.5514069612464" y="680.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="-4.444444444444343" y="-15.0" />
+      <point x="2806.2448944678913" y="850.0" />
+      <point x="2765.4141034404183" y="850.0" />
+      <point x="10.909090909090992" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.GetSpacesResponseDto">
+      <point x="50.0" y="-15.0" />
+      <point x="1915.5160534258926" y="1250.0" />
+      <point x="5432.451539869273" y="1250.0" />
+      <point x="5432.451539869273" y="330.0" />
+      <point x="5425.938381974536" y="330.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.jobs.PendingUploadJob" target="com.vaultionizer.vaultserver.service.PendingUploadService">
+      <point x="0.0" y="-15.0" />
+      <point x="1292.0" y="790.0" />
+      <point x="1404.6545815644208" y="790.0" />
+      <point x="-96.57142857142856" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.WebsocketController" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-87.5" y="-15.0" />
+      <point x="1550.2579365079362" y="780.0" />
+      <point x="1355.167568577408" y="780.0" />
+      <point x="1355.167568577408" y="190.0" />
+      <point x="1424.0079365079362" y="190.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SessionService" target="com.vaultionizer.vaultserver.resource.SessionRepository">
+      <point x="-32.0" y="-15.0" />
+      <point x="2722.5050125313273" y="390.0" />
+      <point x="2690.7550125313273" y="390.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.UserAccessService" target="com.vaultionizer.vaultserver.resource.UserAccessRepository">
+      <point x="-61.33333333333303" y="-15.0" />
+      <point x="5857.105048641203" y="190.0" />
+      <point x="5820.932616309329" y="190.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.WebsocketController" target="com.vaultionizer.vaultserver.service.FileService">
+      <point x="12.5" y="-15.0" />
+      <point x="1650.2579365079362" y="690.0" />
+      <point x="2379.5822320953894" y="690.0" />
+      <point x="-59.5" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.config.WebSocketChannelFilter" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="0.0" y="-15.0" />
+      <point x="2537.863581336578" y="800.0" />
+      <point x="2707.2322852586003" y="800.0" />
+      <point x="-47.27272727272725" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.GetSpacesResponseDto">
+      <point x="38.5" y="-15.0" />
+      <point x="4491.188381974536" y="760.0" />
+      <point x="5176.212419201323" y="760.0" />
+      <point x="5176.212419201323" y="400.0" />
+      <point x="5373.938381974536" y="400.0" />
+      <point x="-78.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SessionController" target="com.vaultionizer.vaultserver.model.dto.AuthWrapperDto">
+      <point x="61.33333333333326" y="-15.0" />
+      <point x="3082.8217153078695" y="860.0" />
+      <point x="4091.3922437627275" y="860.0" />
+      <point x="-53.333333333333485" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.config.WebSocketChannelFilter" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-74.66666666666674" y="-15.0" />
+      <point x="2463.196914669911" y="640.0" />
+      <point x="1815.0514069612464" y="640.0" />
+      <point x="1815.0514069612464" y="170.0" />
+      <point x="1450.1897546897544" y="170.0" />
+      <point x="26.181818181818244" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.service.RefFileService">
+      <point x="-21.052631578947512" y="-15.0" />
+      <point x="4520.219083728922" y="950.0" />
+      <point x="3440.975577096061" y="950.0" />
+      <point x="3440.975577096061" y="400.0" />
+      <point x="3456.6883819745362" y="400.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.UserAccessRepository" target="com.vaultionizer.vaultserver.model.db.UserAccessModel">
+      <point x="0.0" y="-15.0" />
+      <point x="5872.932616309329" y="70.0" />
+      <point x="5881.688381974536" y="70.0" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="48.88888888888869" y="-15.0" />
+      <point x="2859.5782278012243" y="1280.0" />
+      <point x="5523.779107537399" y="1280.0" />
+      <point x="5523.779107537399" y="810.0" />
+      <point x="5527.445774204067" y="810.0" />
+      <point x="6.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.PendingUploadService" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-83.19999999999982" y="-15.0" />
+      <point x="1418.0260101358494" y="360.0" />
+      <point x="1469.6675685774078" y="360.0" />
+      <point x="1469.6675685774078" y="190.0" />
+      <point x="1432.735209235209" y="190.0" />
+      <point x="8.727272727272748" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.AuthWrapperDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-40.0" y="-15.0" />
+      <point x="4104.725577096061" y="390.0" />
+      <point x="4272.470722260195" y="390.0" />
+      <point x="-20.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.SpaceRepository" target="com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyResponseDto">
+      <point x="-42.0" y="-15.0" />
+      <point x="5201.938381974536" y="180.0" />
+      <point x="3297.1883819745362" y="180.0" />
+      <point x="58.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.CreateSpaceDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-40.0" y="-15.0" />
+      <point x="4637.725577096061" y="360.0" />
+      <point x="4328.470722260195" y="360.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.config.WebSocketConfig" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="63.0" y="-15.0" />
+      <point x="2669.083278306275" y="1170.0" />
+      <point x="2712.9166116396086" y="1170.0" />
+      <point x="2712.9166116396086" y="850.0" />
+      <point x="2743.5959216222363" y="850.0" />
+      <point x="-10.909090909090992" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="76.66666666666697" y="-15.0" />
+      <point x="1942.1827200925595" y="1360.0" />
+      <point x="5926.445065349641" y="1360.0" />
+      <point x="5926.445065349641" y="400.0" />
+      <point x="5925.009810545965" y="400.0" />
+      <point x="6.5714285714284415" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="52.5" y="-15.0" />
+      <point x="4505.188381974536" y="780.0" />
+      <point x="5455.445774204067" y="780.0" />
+      <point x="-66.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.db.UserModel">
+      <point x="-36.666666666666515" y="-15.0" />
+      <point x="1828.849386759226" y="1330.0" />
+      <point x="839.5" y="1330.0" />
+      <point x="839.5" y="390.0" />
+      <point x="580.8512202106622" y="390.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="27.600000000000364" y="-15.0" />
+      <point x="5023.288381974537" y="800.0" />
+      <point x="5479.445774204067" y="800.0" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.MiscControllerTest" target="com.vaultionizer.vaultserver.controllers.MiscController">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.resource.SpaceRepository">
+      <point x="-39.272727272727025" y="-15.0" />
+      <point x="5482.173046931339" y="280.0" />
+      <point x="5285.938381974536" y="280.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.JoinSpaceDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-36.0" y="-15.0" />
+      <point x="4468.725577096061" y="390.0" />
+      <point x="4304.470722260195" y="390.0" />
+      <point x="12.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.RefFileService">
+      <point x="-17.5" y="-15.0" />
+      <point x="4435.188381974536" y="540.0" />
+      <point x="3486.6883819745362" y="540.0" />
+      <point x="3486.6883819745362" y="400.0" />
+      <point x="3488.6883819745362" y="400.0" />
+      <point x="8.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.dto.RegisterUserResponseDto">
+      <point x="-76.66666666666652" y="-15.0" />
+      <point x="1788.849386759226" y="1390.0" />
+      <point x="329.0" y="1390.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.FileService" target="com.vaultionizer.vaultserver.helpers.FileStatus">
+      <point x="-34.0" y="-15.0" />
+      <point x="2405.0822320953894" y="360.0" />
+      <point x="2354.4155654287224" y="360.0" />
+      <point x="2354.4155654287224" y="70.0" />
+      <point x="2413.9155654287224" y="70.0" />
+      <point x="-16.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.FileService" target="com.vaultionizer.vaultserver.resource.FileRepository">
+      <point x="-11.333333333333485" y="-15.0" />
+      <point x="2427.748898762056" y="350.0" />
+      <point x="2404.9155654287224" y="350.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserControllerTest" target="com.vaultionizer.vaultserver.service.SpaceService">
+      <point x="69.33333333333348" y="-15.0" />
+      <point x="2227.150955073952" y="1530.0" />
+      <point x="5575.860978882431" y="1530.0" />
+      <point x="5575.860978882431" y="810.0" />
+      <point x="5587.445774204067" y="810.0" />
+      <point x="66.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.UserService" target="com.vaultionizer.vaultserver.model.db.UserModel">
+      <point x="51.0" y="-15.0" />
+      <point x="584.0" y="860.0" />
+      <point x="724.5754176064288" y="860.0" />
+      <point x="724.5754176064288" y="400.0" />
+      <point x="556.8512202106622" y="400.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.UserAccessService" target="com.vaultionizer.vaultserver.model.db.UserAccessModel">
+      <point x="61.33333333333303" y="-15.0" />
+      <point x="5979.771715307869" y="190.0" />
+      <point x="5987.432616309329" y="190.0" />
+      <point x="5987.432616309329" y="70.0" />
+      <point x="5965.688381974536" y="70.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.service.UserService">
+      <point x="-63.333333333333485" y="-15.0" />
+      <point x="1802.182720092559" y="1370.0" />
+      <point x="550.0" y="1370.0" />
+      <point x="17.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="10.0" y="-15.0" />
+      <point x="1875.5160534258926" y="1140.0" />
+      <point x="2660.363581336578" y="1140.0" />
+      <point x="2660.363581336578" y="820.0" />
+      <point x="2721.777739804055" y="820.0" />
+      <point x="-32.72727272727275" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.model.db.SessionModel">
+      <point x="3.333333333333485" y="-15.0" />
+      <point x="1868.849386759226" y="1130.0" />
+      <point x="1896.6253400041678" y="1130.0" />
+      <point x="1896.6253400041678" y="750.0" />
+      <point x="2568.4155654287224" y="750.0" />
+      <point x="2568.4155654287224" y="180.0" />
+      <point x="2781.655012531328" y="180.0" />
+      <point x="-57.59999999999991" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.controllers.SpaceController">
+      <point x="36.66666666666697" y="-15.0" />
+      <point x="1902.1827200925595" y="1230.0" />
+      <point x="4382.688381974536" y="1230.0" />
+      <point x="-70.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.db.FileModel" target="com.vaultionizer.vaultserver.helpers.FileStatus">
+      <point x="-30.0" y="-15.0" />
+      <point x="2505.4155654287224" y="70.0" />
+      <point x="2445.9155654287224" y="70.0" />
+      <point x="16.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.config.WebSocketConfig" target="com.vaultionizer.vaultserver.config.WebSocketChannelFilter">
+      <point x="-21.0" y="-15.0" />
+      <point x="2585.083278306275" y="1110.0" />
+      <point x="2537.863581336578" y="1110.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.SessionService">
+      <point x="-52.5" y="-15.0" />
+      <point x="4400.188381974536" y="590.0" />
+      <point x="2809.0504670767823" y="590.0" />
+      <point x="54.54545454545473" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.RefFileController" target="com.vaultionizer.vaultserver.model.dto.ReadRefFileDto">
+      <point x="9.199999999999818" y="-15.0" />
+      <point x="5004.888381974536" y="730.0" />
+      <point x="5053.725577096061" y="730.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.service.UserAccessService">
+      <point x="80.5" y="-15.0" />
+      <point x="4533.188381974536" y="840.0" />
+      <point x="5886.778398682974" y="840.0" />
+      <point x="5886.778398682974" y="400.0" />
+      <point x="5872.438381974536" y="400.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.RefFileRepository" target="com.vaultionizer.vaultserver.model.db.RefFilesModel">
+      <point x="0.0" y="-15.0" />
+      <point x="3480.6883819745362" y="70.0" />
+      <point x="3495.5614041881167" y="70.0" />
+      <point x="-12.66666666666697" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceControllerTest" target="com.vaultionizer.vaultserver.controllers.SpaceController">
+      <point x="-10.526315789473301" y="-15.0" />
+      <point x="4530.745399518396" y="940.0" />
+      <point x="4494.688381974536" y="940.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.resource.SpaceRepository" target="com.vaultionizer.vaultserver.model.db.SpaceModel">
+      <point x="42.0" y="-15.0" />
+      <point x="5285.938381974536" y="190.0" />
+      <point x="5630.075473452186" y="190.0" />
+      <point x="-54.85714285714312" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.FileService" target="com.vaultionizer.vaultserver.model.db.FileModel">
+      <point x="34.0" y="-15.0" />
+      <point x="2473.0822320953894" y="390.0" />
+      <point x="2535.4155654287224" y="390.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.AuthWrapperDto">
+      <point x="-10.5" y="-15.0" />
+      <point x="4442.188381974536" y="530.0" />
+      <point x="4198.058910429394" y="530.0" />
+      <point x="53.333333333333485" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.UserController" target="com.vaultionizer.vaultserver.helpers.Config">
+      <point x="-23.333333333333485" y="-15.0" />
+      <point x="1842.182720092559" y="1310.0" />
+      <point x="1028.5" y="1310.0" />
+      <point x="1028.5" y="160.0" />
+      <point x="1397.826118326118" y="160.0" />
+      <point x="-26.181818181818244" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.model.dto.ReadRefFileDto" target="com.vaultionizer.vaultserver.model.dto.GenericAuthDto">
+      <point x="-40.0" y="-15.0" />
+      <point x="5013.725577096061" y="320.0" />
+      <point x="4360.470722260195" y="320.0" />
+      <point x="68.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.service.SpaceService" target="com.vaultionizer.vaultserver.model.db.RefFilesModel">
+      <point x="13.090909090909008" y="-15.0" />
+      <point x="5534.536683294975" y="330.0" />
+      <point x="5592.938381974536" y="330.0" />
+      <point x="5592.938381974536" y="60.0" />
+      <point x="3546.2280708547837" y="60.0" />
+      <point x="38.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyDto">
+      <point x="-3.5" y="-15.0" />
+      <point x="4449.188381974536" y="520.0" />
+      <point x="4328.725577096061" y="520.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.FileController" target="com.vaultionizer.vaultserver.helpers.FileStatus">
+      <point x="-40.0" y="-15.0" />
+      <point x="2770.6893389123356" y="1060.0" />
+      <point x="2115.5741342339734" y="1060.0" />
+      <point x="2115.5741342339734" y="60.0" />
+      <point x="2381.9155654287224" y="60.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="com.vaultionizer.vaultserver.controllers.SpaceController" target="com.vaultionizer.vaultserver.model.dto.SpaceAuthKeyResponseDto">
+      <point x="-38.5" y="-15.0" />
+      <point x="4414.188381974536" y="570.0" />
+      <point x="3181.1883819745362" y="570.0" />
+      <point x="-58.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="940.7142857142857" y="578.2857142857142" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
