@@ -159,11 +159,6 @@ On this diagram you can see a detailed overview about all the repositories, thei
 
 ![Repositories](../../img/backend/vault-server-repositories-services.svg)
 
-#### 5.2.1 Complete class diagram
-
-You can also have a look at the class diagram - for a more detailed overview:
-![Backend class diagram](../../img/backend/vault-server-overkill.svg)
-
 ## 6. Process View
 
 n/a
@@ -176,7 +171,8 @@ tbd
 
 ### 8.1 Overview
 
-n/a
+You can have a look at the class diagram - for a more detailed overview:
+![Backend class diagram](../../img/backend/vault-server-overkill.svg)
 
 ### 8.2 Layers
 
