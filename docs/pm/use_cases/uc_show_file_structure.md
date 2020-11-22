@@ -22,11 +22,11 @@ The file structure is stored inside an encrypted reference table (JSON file) and
 After the client downloaded the table and successfully decrypted the file, parsing of the file structure becomes possible.
 
 ### Mockup
-![Activity Diagram for use show file structure](../../../img/use_cases/mockups/FileViewer.png)
+![Mockup for file structure](../../../img/use_cases/mockups/show_file_structure.png)
 
 ## Flow of Evenets
 ### Basic Flow
-![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
+![Activity Diagram for use case show file structure](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
 
 ## Gherkin file
 You can find the feature file for this use case [here](https://github.com/Vaultionizer/vault-android-app/blob/master/app/src/test/java/com/vaultionizer/vaultapp/features/FileViewerUC.feature).
