@@ -15,24 +15,19 @@ parent: Project management
 
 # Revision History
 
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 | **Date**           | **Version**        | **Description**    | **Author**         |
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 | 22.11.2020         | 1.0                | Initial            | jatsqi             |
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 |                    |                    |                    |                    |
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 |                    |                    |                    |                    |
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 |                    |                    |                    |                    |
-+--------------------+--------------------+--------------------+--------------------+
+|--------------------|--------------------|--------------------|--------------------|
 
 ## 1. Introduction
-
-[The introduction of the **Software Architecture Document** should
-provide an overview of the entire **Software Architecture Document**. It
-should include the purpose, scope, definitions, acronyms, abbreviations,
-references, and overview of the **Software Architecture Document**.]
 
 ### 1.1 Purpose
 
@@ -42,23 +37,25 @@ different aspects of the system.  It is intended to capture and convey
 the significant architectural decisions which have been made on the
 system.
 
-[This section defines the purpose of the **Software Architecture
-Document**, in the overall project documentation, and briefly describes
-the structure of the document. The specific audiences for the document
-should be identified, with an indication of how they are expected to use
-the document.]
-
 ### 1.2 Scope
 
-[A brief description of what the Software Architecture Document applies
-to; what is affected or influenced by this document.]
+This document tries to accurately describe the architecture of the Vaultionizer project with its two main components:
+* The frontend (Android App)
+* The backend (Spring Boot REST-API)
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
-[This subsection should provide the definitions of all terms, acronyms,
-and abbreviations required to properly interpret the **Software
-Architecture Document**.  This information may be provided by reference
-to the project Glossary.]
+| Abbrevation | Explanation                            |
+|:-----------:|:--------------------------------------:|
+| SAD         | Software Architecture Document         |
+| UC          | Use Case                               |
+| n/a         | not applicable                         |
+| tbd         | to be determined                       |
+| REST        | Representational State Transfer        |
+| API         | Application Programming Interface      |
+| MVC         | Model View Controller                  |
+| MVVM        | Model View View-Model                  |
+| SSOT        | Single Source of Truth                 |
 
 ### 1.4 References
 
@@ -71,9 +68,7 @@ reference to an appendix or to another document.]
 
 ### 1.5 Overview
 
-[This subsection should describe what the rest of the **Software
-Architecture Document** contains and explain how the **Software
-Architecture Document** is organized.]
+The following sections provide an overview about the architecture with its layers, how we organize the flow of data, implementation details and how the deployment process works.
 
 ## 2. Architectural Representation
 
@@ -92,19 +87,40 @@ distribution, and reuse. It also captures the special constraints that
 may apply: design and implementation strategy, development tools, team
 structure, schedule, legacy code, and so on.]
 
+### 3.1 Security
+#### 3.1.1 Connection
+All of our software components require an encrypted connection in order to exchange data with each other, otherwise we would risc the leakage of user data to the public internet.
+The Spring Boot Backend will block all incoming requests that were not received encrypted by the host system. Because of this, a reverse proxy is still possible and we can still remain a lot of flexibility. 
+Similar to the backend, the frontend will only allow connections to hosts with a valid SSL certificate.
+
+#### 3.1.2 Authentication
+The backend will receive the userID and the hashed password.
+If these credentials are valid, the backend will response with a short lived session token which will be used for all further requests. 
+
+#### 3.1.2 Data
+The backend will follow one very important philosophy, which is the very core of our project: The single purpose of the backend is to keep track of users, files, spaces and of course user authentication. Nothing more.
+This implies that the backend has nothing to do with file encryption at all: It just receives the encrypted data and stores it on the host file system.
+All encryption and decryption of the user data is done in the frontend, which receives the data and decrypts it with the keys from the native key store.
+
+### 3.2 Privacy
+The frontend will not collect any personal information at all. The only information necessary in order to use all app features are a valid username and password.
+All analytical data is anonymized.
+
+### 3.3 Distribution
+Both components will be distributed on multiple ways. For the backend a Docker image will be available via the GHCR and Docker Hub.
+The Android App will be downloadable via
+* the Android Play Store
+* a downloadable APK from our website
+
 ## 4. Use-Case View
 
-[This section lists use cases or scenarios from the use-case model if
-they represent some significant, central functionality of the final
-system, or if they have a large architectural coverage - they exercise
-many architectural elements, or if they stress or illustrate a specific,
-delicate point of the architecture.]
+![OUCD](./../../img/use_cases/overall_use_case.svg)
+
+- Green: Planned until end of December
+- White: Planned until end of June (second semester)
 
 ### 4.1 Use-Case Realizations
-
-[This section illustrates how the software actually works by giving a
-few selected use-case (or scenario) realizations, and explains how the
-various design model elements contribute to their functionality.]
+tbd
 
 ## 5. Logical View
 
@@ -117,83 +133,66 @@ important relationships, operations, and attributes.]
 
 ### 5.1 Overview
 
-[This subsection describes the overall decomposition of the design model
-in terms of its package hierarchy and layers.]
+For the backend our "high level" architecture looks like this:
+![Spring Web MVC](https://www.petrikainulainen.net/wp-content/uploads/spring-web-app-architecture.png)
+
+Source: https://www.petrikainulainen.net/wp-content/uploads/spring-web-app-architecture.png
+
+#### 5.1.1 Repository Layer
+We use repositories as a typical SSOT for all data requests from the service layer.
+They provide all methods in order to access different kinds of data.
+The repository layer also connects the database with the other layers.
+
+#### 5.1.2 Service Layer
+This layer contains additional business logic to handle requests. Operations like saving/reading files from the filesystem and additional checks are also done here.
+It is also pretty important to note here, that data from database (repository layer) is not exposed directly to the web layer. Instead the data from the domain model (entities which represent the database) is converted into DTOs, which provide all the data necessary to fullfil a request, nothing more.
+
+#### 5.1.3 Web Layer
+The Web-Layer consists of controller which accepts different kinds of requests from a client.
+This layer also does things like authentication and a first request validation.
 
 ### 5.2 Architecturally Significant Design Packages
 
-[For each significant package, include a subsection with its name, its
-brief description, and a diagram with all significant classes and
-packages contained within the package.
+#### 5.2.1 Repositories
 
-For each significant class in the package, include its name, brief
-description, and, optionally a description of some of its major
-responsibilities, operations and attributes.]
+On this diagram you can see a detailed overview about all the repositories, their corresponding service and the dependencies between them.
+
+![Repositories](../../img/backend/vault-server-repositories-services.svg)
+
+#### 5.2.1 Complete class diagram
+
+You can also have a look at the class diagram - for a more detailed overview:
+![Backend class diagram](../../img/backend/vault-server-overkill.svg)
 
 ## 6. Process View
 
-[This section describes the system's decomposition into lightweight
-processes (single threads of control) and heavyweight processes
-(groupings of lightweight processes). Organize the section by groups of
-processes that communicate or interact. Describe the main modes of
-communication between processes, such as message passing, interrupts,
-and rendezvous.]
+n/a
 
 ## 7. Deployment View
 
-[This section describes one or more physical network (hardware)
-configurations on which the software is deployed and run. It is a view
-of the Deployment Model. At a minimum for each configuration it should
-indicate the physical nodes (computers, CPUs) that execute the software,
-and their interconnections (bus, LAN, point-to-point, and so on.) Also
-include a mapping of the processes of the **Process View** onto the
-physical nodes.]
+tbd
 
 ## 8. Implementation View
 
-[This section describes the overall structure of the implementation
-model, the decomposition of the software into layers and subsystems in
-the implementation model, and any architecturally significant
-components.]
-
 ### 8.1 Overview
 
-[This subsection names and defines the various layers and their
-contents, the rules that govern the inclusion to a given layer, and the
-boundaries between layers. Include a component diagram that shows the
-relations between layers. ]
+n/a
 
 ### 8.2 Layers
 
-[For each layer, include a subsection with its name, an enumeration of
-the subsystems located in the layer, and a component diagram.]
+n/a
 
-## 9. Data View (optional)
+## 9. Data View
 
-[A description of the persistent data storage perspective of the system.
-This section is optional if there is little or no persistent data, or
-the translation between the Design Model and the Data Model is trivial.]
+In order to store data persistent we use a PostgreSQL database.
+Our data model looks like this:
+![ER Diagram](../../img/db/db_diagram.svg)
 
 ## 10. Size and Performance
 
-[A description of the major dimensioning characteristics of the software
-that impact the architecture, as well as the target performance
-constraints.]
+tbd
 
 ## 11. Quality
 
-[A description of how the software architecture contributes to all
-capabilities (other than functionality) of the system: extensibility,
-reliability, portability, and so on. If these characteristics have
-special significance, for example safety, security or privacy
-implications, they should be clearly delineated.]
-
-![](Software%20Architecture%20Document_files/artfc_w.gif)
-[Artifacts](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ovu_arts.htm)
-\> ![](Software%20Architecture%20Document_files/artfc_y.gif) [Analysis &
-Design Artifact
-Set](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ars_dsg.htm)
-\> ![](Software%20Architecture%20Document_files/ar_doc.gif) [Software
-Architecture
-Document](https://sce.uhcl.edu/helm/RationalUnifiedProcess/process/artifact/ar_sadoc.htm)
-\> ![](Software%20Architecture%20Document_files/ie.gif) rup\_sad.htm
+Our goal is to make the backend with all its components as maintainable as possible.
+Because the backend consists of many separated and easily exchangeable layers it is very easy to switch e.g. between databases.
