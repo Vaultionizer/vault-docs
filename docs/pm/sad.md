@@ -72,22 +72,13 @@ The following sections provide an overview about the architecture with its layer
 
 ## 2. Architectural Representation
 
-[This section describes what software architecture is for the current
-system, and how it is represented. Of the **Use-Case**, **Logical**,
-**Process**, **Deployment**, and **Implementation Views**, it enumerates
-the views that are necessary, and for each view, explains what types of
-model elements it contains.]
+![MVC in general](../../img/common/mvc.jpg)
+For the backend and the whole architecture we are using the MCV design pattern. This pattern allows us to clearly separate the business logic from the data itself which leads to a very clean and maintainable code basis.
 
 ## 3. Architectural Goals and Constraints
 
-[This section describes the software requirements and objectives that
-have some significant impact on the architecture, for example, safety,
-security, privacy, use of an off-the-shelf product, portability,
-distribution, and reuse. It also captures the special constraints that
-may apply: design and implementation strategy, development tools, team
-structure, schedule, legacy code, and so on.]
-
 ### 3.1 Security
+
 #### 3.1.1 Connection
 All of our software components require an encrypted connection in order to exchange data with each other, otherwise we would risc the leakage of user data to the public internet.
 The Spring Boot Backend will block all incoming requests that were not received encrypted by the host system. Because of this, a reverse proxy is still possible and we can still remain a lot of flexibility. 
@@ -134,9 +125,7 @@ important relationships, operations, and attributes.]
 ### 5.1 Overview
 
 For the backend our "high level" architecture looks like this:
-![Spring Web MVC](https://www.petrikainulainen.net/wp-content/uploads/spring-web-app-architecture.png)
-
-Source: https://www.petrikainulainen.net/wp-content/uploads/spring-web-app-architecture.png
+![Spring Web MVC](../../img/common/spring_mvc.png)
 
 #### 5.1.1 Repository Layer
 We use repositories as a typical SSOT for all data requests from the service layer.
@@ -157,7 +146,7 @@ This layer also does things like authentication and a first request validation.
 
 On this diagram you can see a detailed overview about all the repositories, their corresponding service and the dependencies between them.
 
-![Repositories](../../img/backend/vault-server-repositories-services.svg)
+![Repositories](../../img/backend/vault-server-architecture.svg)
 
 ## 6. Process View
 
@@ -165,7 +154,7 @@ n/a
 
 ## 7. Deployment View
 
-tbd
+![Deployment UML diagram](../../img/common/ComponentDeploymentDiagram.svg)
 
 ## 8. Implementation View
 
@@ -189,7 +178,7 @@ Our data model looks like this:
 
 ## 10. Size and Performance
 
-tbd
+n/a
 
 ## 11. Quality
 
