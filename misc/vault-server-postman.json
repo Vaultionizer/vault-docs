@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "4c9541d6-c6bf-4090-baf3-08f35c4aacc2",
+		"name": "l",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abcd\",\n    \"refFile\": \"was ein dreckskey!\",\n    \"key\": \"testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!\",\n\n    \"serverUser\": \"\",\n    \"serverAuthKey\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/users/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"12345\",\n    \"key\": \"testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!testpasswordistschlechtesPasswort!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/users/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSpace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  },\n  \"authKey\": \"abcde\",\n  \"isPrivate\": false,\n  \"referenceFile\": \"WattdenuerereferenceDing?!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/spaces/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"spaces",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/misc/version",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"misc",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  },\n  \"spaceID\": 2,\n  \"amountFiles\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/file/upload",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadRequest",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  },\n  \"spaceID\": 2,\n  \"saveIndex\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/file/download",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"file",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteFile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"54ddbc1b-8e35-4003-ad41-63c31c2e45ef\",\n    \"userID\": 1\n  },\n  \"spaceID\": 2,\n  \"saveIndex\": 8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/file/delete",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"file",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RenewSession",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"auth\": {\n        \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n        \"userID\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/session/renew",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"session",
+						"renew"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sessionKey\": \"54ddbc1b-8e35-4003-ad41-63c31c2e45ef\",\n    \"userID\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/users/logout",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadRefFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  },\n  \"spaceID\": 1,\n  \"lastRead\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/refFile/read",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"refFile",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateRefFile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  },\n  \"spaceID\": 1,\n  \"content\": \"Pizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma MiaPizza Pasta Mamma Mia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/refFile/update",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"refFile",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllSpaces",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"auth\": {\n        \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n        \"userID\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/spaces/getAll",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"spaces",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuitSpace",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"auth\": {\n        \"userID\": 1,\n        \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/spaces/quit/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"spaces",
+						"quit",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JoinSpace",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"84161301-dcb8-447b-a3ef-e1cf15e75d74\",\n    \"userID\": 2\n  },\n  \"authKey\": \"abcde\",\n  \"spaceID\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/spaces/join",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"spaces",
+						"join"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSpace",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"auth\": {\n    \"sessionKey\": \"2f92d518-7aa6-4a23-b8ac-8b56d0dca271\",\n    \"userID\": 1\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/spaces/delete/2",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"spaces",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckServerAuthenticated",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"serverUser\": \"root\",\n    \"serverAuthKey\": \"toor\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/misc/checkAuthenticated",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"misc",
+						"checkAuthenticated"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a380a548-8b83-45f3-a3c5-2c37589b9bff",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8fdf3ef2-5272-462d-8028-18f583400fcd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "7b036c85-e7a9-4518-9205-93e39eed3921",
+			"key": "host",
+			"value": "https://localhost:443"
+		},
+		{
+			"id": "9b51ad08-c98d-4b94-9f9d-2c66575f5332",
+			"value": "",
+			"disabled": true
+		}
+	],
+	"protocolProfileBehavior": {}
+}
