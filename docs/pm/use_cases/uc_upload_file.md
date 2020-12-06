@@ -28,7 +28,7 @@ tbd
 ![Activity Diagram for use case create space](../../../img/use_cases/activity_diagrams/ad_upload_file.svg)
 
 ## Gherkin file
-tbd
+![The .feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/uploadFile.feature)
 
 ### Alternative Flow
 n/a

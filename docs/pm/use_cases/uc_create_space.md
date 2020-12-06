@@ -41,7 +41,8 @@ n/a
 * User is logged in
 
 ## Postconditions
-n/a
+* The space was created with given parameters
+* The user has access to the space
 
 ## Extension Points
 n/a
