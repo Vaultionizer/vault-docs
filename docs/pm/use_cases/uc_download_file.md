@@ -28,7 +28,7 @@ tbd
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_download_file.svg)
 
 ## Gherkin file
-![The .feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/downloadFile.feature)
+[The .feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/downloadFile.feature)
 
 ### Alternative Flow
 n/a

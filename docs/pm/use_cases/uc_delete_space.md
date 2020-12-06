@@ -28,7 +28,7 @@ tbd
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_delete_space.svg)
 
 ## Gherkin file
-![The .feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/deleteSpace.feature)
+[The .feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/deleteSpace.feature)
 
 ### Alternative Flow
 n/a

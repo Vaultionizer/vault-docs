@@ -29,7 +29,7 @@ tbd
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_delete_user.svg)
 
 ## Gherkin file
-![The feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/deleteUser.feature)
+[The feature file](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/deleteUser.feature)
 
 ### Alternative Flow
 n/a
