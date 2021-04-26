@@ -53,5 +53,4 @@ n/a
 
 ## Function Points
 ![Function Points calculation table for Create Space - made with Tiny Tools](../../../img/use_cases/function_points/uc14_delete_user.png)
-
 Function points: **36.38**
