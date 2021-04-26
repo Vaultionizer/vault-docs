@@ -49,3 +49,8 @@ n/a
 
 ## Extension Points
 n/a
+
+## Function Points
+![Function Points calculation table for Create Space - made with Tiny Tools](../../../img/use_cases/function_points/uc8_download.png)
+
+Function points: **35.31**
