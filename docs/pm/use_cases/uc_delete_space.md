@@ -53,6 +53,6 @@ n/a
 n/a
 
 ## Function Points
-![Function Points calculation table for Create Space - made with Tiny Tools](../../../img/use_cases/function_points/uc1_createspace.png)
+![Function Points calculation table for Create Space - made with Tiny Tools](../../../img/use_cases/function_points/uc15_delete_space.png)
 
 Function points: **36.38**
