@@ -49,3 +49,5 @@ n/a
 
 ## Extension Points
 n/a
+
+Function points: **58,85**
