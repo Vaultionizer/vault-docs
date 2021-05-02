@@ -50,7 +50,7 @@ parent: Project management
     + [6.1.1 Test Plan Entry Criteria](#611-test-plan-entry-criteria)
     + [6.1.2 Test Plan Exit Criteria](#612-test-plan-exit-criteria)
     + [6.1.3 Suspension and Resumption Criteria](#613-suspension-and-resumption-criteria)
-  * [6.2](#62)
+  * [6.2 Test Cycles](#62-test-cycles)
       - [6.2.1 Test Cycle Entry Criteria](#621-test-cycle-entry-criteria)
       - [6.2.2 Test Cycle Exit Criteria](#622-test-cycle-exit-criteria)
       - [6.2.3 Test Cycle Abnormal Termination](#623-test-cycle-abnormal-termination)
@@ -425,7 +425,7 @@ n/a
 
 n/a
 
-### 6.2
+### 6.2 Test Cycles
 
 ##### 6.2.1 Test Cycle Entry Criteria
 
