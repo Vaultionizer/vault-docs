@@ -62,9 +62,9 @@ This test plan is written primarily for internal documentation reasons. It is me
 | ------------------------------------------------------------------------|:----------:| ------------------------- |
 | [Blog]()                                                                | Oct. 2018  |                  |
 | [GitHub Repository]()                                                   | Oct. 2018  |                  |
-| [UC1 Posting a Session](../use_cases/UC1_XX.md)                         | Oct. 2018  |                  |
-| [UC2 Joining a Session](../use_cases/UC2_XX.md)                         | Oct. 2018  |                  |
-| [UC3 Session Overview](../use_cases/UC3_XX.md)                          | Oct. 2018  |                  |
+| [UC1 XX](../use_cases/UC1_XX.md)                         | Oct. 2018  |                  |
+| [UC2 XX](../use_cases/UC2_XX.md)                         | Oct. 2018  |                  |
+| [UC3 XX](../use_cases/UC3_XX.md)                          | Oct. 2018  |                  |
 | [Test Plan](./TestPlan.md)                                              | Apr. 2019  |                  |
 | [SRS](../SoftwareRequirementsSpecification.md)                          | Oct. 2018  |                  |
 | [SAD](../SoftwareArchitectureDocument.md)                               | Oct. 2018  |                  |
