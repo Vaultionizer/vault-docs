@@ -28,21 +28,18 @@ This Test Plan for Vaultionizer supports the following objectives:
 
 ### 1.2 Scope
 
-This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.
-This document shows the following types of testing:
-
-- Unit Testing
-- Integration Testing
-- User Interface Testing
-- API Testing
-
- Not covered are any tests related to performance and scale or usability.
+[Describe the levels of testing (for example, Unit, Integration, or System, and the types of testing (such as Functionality, Usability, Reliability, Performance, and Supportability) that will be addressed by this Test Plan. It is also important to provide a general indication of significant areas that will be excluded from scope, especially where the intended audience might otherwise reasonably assume the inclusion of those areas. 
+Note: Avoid placing detail here that you will repeat in sections 3, Target Test Items, and 4, Outline of Planned Tests.]
 
 ### 1.3 Intended Audience
 
-This test plan is written primarily for internal documentation reasons. It is meant to provide orientation to the developers to work from and as a documentation to measure the fullfillment of quality requirements against.
+[Provide a brief description of the audience for whom you are writing the Test Plan. This helps readers of your document identify whether it is a document intended for their use, and helps prevent the document from being used inappropriately.
+Note: The document style and content often alters in relation to the intended audience.
+This section should only be about three to five paragraphs in length.]
 
 ### 1.4 Document Terminology and Acronyms
+
+[This subsection provides the definitions of any terms, acronyms, and abbreviations required to properly interpret the Test Plan. Avoid listing items that are generally applicable to the project as a whole and that are already defined in the project's Glossary. Include a reference to the project's Glossary in the References section.]
 
 | Abbr | Abbreviation                        |
 |------|-------------------------------------|
@@ -58,43 +55,79 @@ This test plan is written primarily for internal documentation reasons. It is me
 
 ### 1.5  References
 
+[This subsection provides a list of the documents referenced elsewhere within the Test Plan. Identify each document by title, version (or report number if applicable), date, and publishing organization or original author. Avoid listing documents that are influential but not directly referenced. Specify the sources from which the "official versions" of the references can be obtained, such as intranet UNC names or document reference codes. This information may be provided by reference to an appendix or to another document.]
+
 | Title                                                                   | Date       | Publishing organization   |
 | ------------------------------------------------------------------------|:----------:| ------------------------- |
 | [Blog]()                                                                | Oct. 2018  |                  |
 | [GitHub Repository]()                                                   | Oct. 2018  |                  |
-| [UC1 XX](../use_cases/UC1_XX.md)                         | Oct. 2018  |                  |
-| [UC2 XX](../use_cases/UC2_XX.md)                         | Oct. 2018  |                  |
-| [UC3 XX](../use_cases/UC3_XX.md)                          | Oct. 2018  |                  |
+| [UC1 XX](../use_cases/UC1_XX.md)                                        | Oct. 2018  |                  |
+| [UC2 XX](../use_cases/UC2_XX.md)                                        | Oct. 2018  |                  |
+| [UC3 XX](../use_cases/UC3_XX.md)                                        | Oct. 2018  |                  |
 | [Test Plan](./TestPlan.md)                                              | Apr. 2019  |                  |
 | [SRS](../SoftwareRequirementsSpecification.md)                          | Oct. 2018  |                  |
 | [SAD](../SoftwareArchitectureDocument.md)                               | Oct. 2018  |                  |
 
 ### 1.6 Document Structure
 
-n/a
+[This subsection outlines what the rest of the Test Plan contains and gives an introduction to how the rest of the document is organized. This section may be eliminated if a Table of Contents is used.]
+
 
 ## 2. Evaluation Mission and Test Motivation
 
+[Provide an overview of the mission and motivation for the testing that will be conducted in this iteration.]
+
 ### 2.1 Background
+
+[Provide a brief description of the background surrounding why the test effort defined by this Test Plan will be undertaken. Include information such as the key problem being solved, the major benefits of the solution, the planned architecture of the solution, and a brief history of the project. Where this information is defined in other documents, you can include references to those other more detailed documents if appropriate. This section should only be about three to five paragraphs in length.]
 
 Testing serves to ensure that the written code does what it is intended to do. It also prevents future code changes to break existing functionality unnoticed. In the context of integration it can also prevent broken software states to be merged into secured VC branches
 
 ### 2.2 Evaluation Mission
 
-Testing is a crucial phase in the development cycle. It is necessary in order to fix technical bugs and important functional problems. With TDD we define the test first and can fix bugs before they even occur.
+[Provide a brief statement that defines the mission for the evaluation effort in the current iteration. This statement might incorporate one or more concerns including:
 
+- find as many bugs as possible
+
+- find important problems
+
+- assess perceived quality risks
+
+- advise about perceived project risks
+
+- certify to a standard
+
+- verify a specification (requirements, design or claims)
+
+- advise about product quality
+
+- satisfy stakeholders
+
+- advise about testing
+
+- fulfill process mandates
+
+- and so forth
+
+Each mission provides a different context to the test effort and alters the way in which testing should be approached.]
 ### 2.3 Test Motivators
 
-The tests are done to ensure quality and mitigate risks and fulfill functional requirements. Their purpose is to provide stability for our application.
-
+[Provide an outline of the key elements that will motivate the testing effort in this iteration. Testing will be motivated by many things¾quality risks, technical risks, project risks, use cases, functional requirements, nonfunctional requirements, design elements, suspected failures or faults, change requests, and so forth.]
 ## 3. Target Test Items
 
-- Android frontend
-- Server backend (and APIs)
+The listing below identifies those test items software, hardware, and supporting product elements ¾that have been identified as targets for testing. This list represents what items will be tested.
+
+[Provide a high level list of the major target test items. This list should include both items produced directly by the project development team and items that those products rely on. For example, basic processor hardware, peripheral devices, operating systems, third-party products or components, and so forth. Consider grouping the list by category and assigning relative importance to each motivator.]
 
 ## 4. Outline of Planned Tests
 
+[This section presents the recommended resources for the  Project Name  project, their main responsibilities, and their knowledge or skill set.]
+
 ### 4.1 Outline of Test Inclusions
+
+[This section provides a high-level outline of the testing that will be performed. The outline in this section represents a high level overview of both the tests that will be performed and those that will not.]
+
+[Example below:]
 
 *Frontend: Android Client*:
 
@@ -113,20 +146,30 @@ The tests themself will not be tested and will not account into code coverage.
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
 
-n/a
+[Separately outline test areas you suspect might be useful to investigate and evaluate, but that have not been sufficiently researched to know if they are important to pursue.]
 
 ### 4.3 Outline of Test Exclusions
 
-Because of time and resource constraints we will not do:
+[Provide a high level outline of the potential tests that might have been conducted, but that have been explicitly excluded from this plan. If a type of test will not be implemented and executed, indicate this in a sentence stating the test will not be implemented or executed, and stating the justification, such as:
 
-- Stress test
-- Load/performance tests
-- Usability tests
-- any further tests
+- "These tests do not help achieve the evaluation mission."
+
+- "There are insufficient resources to conduct these tests."
+
+- "These tests are unnecessary due to the testing conducted by xxxx."
+
+As a heuristic, if you think it would be reasonable for one of your audience members to expect a certain aspect of testing to be included that you will not or cannot address, you should note its exclusion. If the team agrees the exclusion is obvious, you probably don't need to list it.]
 
 ## 5. Test Approach
 
+[The Test Approach presents the recommended strategy for designing and implementing the required tests. Sections 3, Target Test Items, and 4, Outline of Planned Tests, identified what items will be tested and what types of tests would be performed. This section describes how those tests will be realized.
+One aspect to consider for the test approach is the techniques to be used. This should include an outline of how each technique can be implemented, both from a manual and/or an automated perspective, and the criterion for knowing that the technique is useful and successful. For each technique, provide a description of the technique and define why it is an important part of the test approach by briefly outlining how it helps achieve the Evaluation Mission or addresses the Test Motivators.
+Another aspect to discuss in this section is the Fault or Failure models that are applicable and ways to approach evaluating them.
+As you define each aspect of the approach, you should update section 10, Responsibilities, Staffing, and Training Needs, to document the test environment configuration and other resources that will be needed to implement each aspect.]
+
 ### 5.1 Initial Test-Idea Catalogs and Other Reference Sources
+
+[Provide a listing of existing resources that will be referenced to stimulate the identification and selection of specific tests to be conducted. An example Test-Ideas Catalog is provided in the examples section of RUP.]
 
 ### 5.2 Testing Techniques and Types
 
@@ -158,7 +201,7 @@ Because of time and resource constraints we will not do:
 
 #### 5.2.3 Business Cycle Testing
 
-[Business Cycle Testing should emulate the activities performed on the <Project Name> over time. A period should be identified, such as one year, and transactions and activities that would occur during a year's period should be executed. This includes all daily, weekly, and monthly cycles, and events that are date-sensitive, such as ticklers.]
+[Business Cycle Testing should emulate the activities performed on the  Project Name  over time. A period should be identified, such as one year, and transactions and activities that would occur during a year's period should be executed. This includes all daily, weekly, and monthly cycles, and events that are date-sensitive, such as ticklers.]
 
 |                       | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
@@ -375,21 +418,15 @@ n/a
 ## 8. Testing Workflow
 
 [Provide an outline of the workflow to be followed by the test team in the development and execution of this Test Plan.
-
 The specific testing workflow that you will use should be documented separately in the project's Development Case. It should explain how the project has customized the base RUP test workflow (typically on a phase-by-phase basis). In most cases, we recommend you place a reference in this section of the Test Plan to the relevant section of the Development Case. It might be both useful and sufficient to simply include a diagram or image depicting your test workflow.
-
-More specific details of the individual testing tasks are defined in a number of different ways, depending on project culture; for example:]
-
+More specific details of the individual testing tasks are defined in a number of different ways, depending on project culture; for example:
 * defined as a list of tasks in this section of the Test Plan, or in an accompanying appendix
 * defined in a central project schedule (often in a scheduling tool such as Microsoft Project)
 * documented in individual, "dynamic" to-do lists for each team member, which are usually too detailed to be placed in the Test Plan
 * documented on a centrally located whiteboard and updated dynamically
 * not formally documented at all
-
-[Based on your project culture, you should either list your specific testing tasks here or provide some descriptive text explaining the process your team uses to handle detailed task planning and provide a reference to where the details are stored, if appropriate.
-
+Based on your project culture, you should either list your specific testing tasks here or provide some descriptive text explaining the process your team uses to handle detailed task planning and provide a reference to where the details are stored, if appropriate.
 For Master Test Plans, we recommend avoiding detailed task planning, which is often an unproductive effort if done as a front-loaded activity at the beginning of the project. A Master Test Plan might usefully describe the phases and the number of iterations, and give an indication of what types of testing are generally planned for each Phase or Iteration.
-
 Note: Where process and detailed planning information is recorded centrally and separately from this Test Plan, you will have to manage the issues that will arise from having duplicate copies of the same information. To avoid team members referencing out-of-date information, we suggest that in this situation you place the minimum amount of process and planning information within the Test Plan to make ongoing maintenance easier and simply reference the "Master" source material.]
 
 ## 9. Environmental Needs
@@ -489,9 +526,9 @@ We want to keep over [XX]% code coverage.
 
 | Risk                                    | Mitigation Strategy                                           | Contingency (Risk is realized)                                                                              |
 |-----------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Prerequisite Entry Criteria is not met. | <Tester> will define the prerequisites that must be met before Load Testing can start. <Customer> will endeavor to meet prerequisites indicated by <Tester>.          | meet outstanding prerequisites consider Load Test Failure                                                   |
-| Test data proves to be inadequate.      |  Customer> will ensure a full set of suitable and protected test data is available. br/><Tester> will indicate what is required and will verify suitability of test data. | redefine test data review Test Plan and modify Components (that is, scripts) consider Load Test Failure |
-| Database requires a refresh.            | <System Administrator> will endeavor to ensure that the Database is regularly refreshed as required by the <Tester>.                                                      | restore data and restart clear Database                                                                     |
+| Prerequisite Entry Criteria is not met. |  Tester  will define the prerequisites that must be met before Load Testing can start.  Customer  will endeavor to meet prerequisites indicated by  Tester .          | meet outstanding prerequisites consider Load Test Failure                                                   |
+| Test data proves to be inadequate.      |  Customer  will ensure a full set of suitable and protected test data is available. br/  Tester  will indicate what is required and will verify suitability of test data. | redefine test data review Test Plan and modify Components (that is, scripts) consider Load Test Failure |
+| Database requires a refresh.            |  System Administrator  will endeavor to ensure that the Database is regularly refreshed as required by the  Tester .                                                      | restore data and restart clear Database                                                                     |
 
 ## 13. Management Process and Procedures
 
