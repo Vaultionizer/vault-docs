@@ -48,4 +48,5 @@ n/a
 
 ## Function Points
 ![Function Points calculation table for Create Space - made with Tiny Tools](../../../img/use_cases/function_points/uc11_encrypt.png)
+
 Function points: **26.75**
