@@ -5,14 +5,8 @@ nav_order: 3
 parent: Project management
 ---
 # Test Plan
-{: .no_toc }
 
 ## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 
 - [1. Introduction](#1-introduction)
   * [1.1 Purpose](#11-purpose)
