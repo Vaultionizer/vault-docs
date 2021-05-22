@@ -110,18 +110,22 @@ This document is intended for internal documentation and overview over the testi
 
 | Title                                                                   | Date       | Publishing organization   |
 | ------------------------------------------------------------------------|:----------:| ------------------------- |
-| [Blog]()                                                                | Mai. 2021  | Vaultionizer              |
-| [GitHub Repository]()                                                   | Mai. 2021  | Vaultionizer              |
-| [UC1 XX](../use_cases/UC1_XX.md)                                        | Mai. 2021  | Vaultionizer              |   
-| [UC2 XX](../use_cases/UC2_XX.md)                                        | Mai. 2021  | Vaultionizer              |
-| [UC3 XX](../use_cases/UC3_XX.md)                                        | Mai. 2021  | Vaultionizer              |
+| [Blog](https://vaultionizer.com/)                                       | Mai. 2021  | Vaultionizer              |
+| [GitHub Repository](https://github.com/Vaultionizer)                    | Mai. 2021  | Vaultionizer              |
+| [UC1 Create Space](./use_cases/uc_create_space.md)                      | Mai. 2021  | Vaultionizer              |   
+| [UC1 Delete Space](./use_cases/uc_delete_space.md)                      | Mai. 2021  | Vaultionizer              |    
+| [UC1 Delete User](./use_cases/uc_delete_user.md)                        | Mai. 2021  | Vaultionizer              |    
+| [UC1 Download File](./use_cases/uc_download_file.md)                    | Mai. 2021  | Vaultionizer              |    
+| [UC1 Encrypt](./use_cases/uc_encrypt.md)                                | Mai. 2021  | Vaultionizer              |    
+| [UC1 Show fil](./use_cases/uc_show_file_structure.md)                   | Mai. 2021  | Vaultionizer              |    
+| [UC1 XX](./use_cases/uc_upload_file.md)                                 | Mai. 2021  | Vaultionizer              |   
 | [Test Plan](./TestPlan.md)                                              | Mai. 2021  | Vaultionizer              |
-| [SRS](../SoftwareRequirementsSpecification.md)                          | Mai. 2021  | Vaultionizer              |
-| [SAD](../SoftwareArchitectureDocument.md)                               | Mai. 2021  | Vaultionizer              |
+| [SRS](./srs.md)                                                         | Mai. 2021  | Vaultionizer              |
+| [SAD](./sad.md)                                                         | Mai. 2021  | Vaultionizer              |
 
 ### 1.6 Document Structure
 
-[This subsection outlines what the rest of the Test Plan contains and gives an introduction to how the rest of the document is organized. This section may be eliminated if a Table of Contents is used.]
+See table og contents.
 
 ## 2. Evaluation Mission and Test Motivation
 
@@ -159,8 +163,6 @@ The listing below identifies those test items software, hardware, and supporting
 - Integration testing
 - Api testing
 
-![Testing overview](./testing_overview.png)  
-
 The tests themselves will not be tested and will not account into code coverage.
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
@@ -186,13 +188,13 @@ n/a
 
 #### 5.2.2 Functional Testing
 
-| Unit Tests            | Description                                                         |
-|-----------------------|---------------------------------------------------------------------|
-|Technique Objective    |  Test basic functionality of single components. |
-|Technique              |  JUnit4 Tests |
-|Oracles                |  Checks asserted output of a basic function against the output of the implementation. |
-|Required Tools         |  JUnit4 |
-|Success Criteria       |  The asserted output is identical to the generated output. |
+| Unit Tests            | Description                                                                             |
+|-----------------------|-----------------------------------------------------------------------------------------|
+|Technique Objective    |  Test basic functionality of single components.                                         |
+|Technique              |  JUnit4 Tests                                                                           |
+|Oracles                |  Checks asserted output of a basic function against the output of the implementation.   |
+|Required Tools         |  JUnit4                                                                                 |
+|Success Criteria       |  The asserted output is identical to the generated output.                              |
 |Special Considerations |  Random generation of inputs must be expected when handling cryptographic instructions. |
 
 #### 5.2.3 Business Cycle Testing
@@ -203,12 +205,12 @@ n/a
 
 | UI Tests              | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
-|Technique Objective    | Simulation of UI interaction. |
-|Technique              | UI Tests |
-|Oracles                | Interactions with UI components through touch screen input. |
-|Required Tools         | Espresso |
-|Success Criteria       | All tests pass with the intended result. |
-|Special Considerations | - |
+|Technique Objective    | Simulation of UI interaction.                                       |
+|Technique              | UI Tests                                                            |
+|Oracles                | Interactions with UI components through touch screen input.         |
+|Required Tools         | Espresso                                                            |
+|Success Criteria       | All tests pass with the intended result.                            |
+|Special Considerations | -                                                                   |
 
 #### 5.2.5 Performance Profiling
 
@@ -222,12 +224,12 @@ n/a
 
 | Cucumber Tests        | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
-|Technique Objective    | Stress testing the API. |
-|Technique              | Exceptions handling |
-|Oracles                | Test exception handling by sending corrupt request to the API. |
-|Required Tools         | Cucumber & database |
-|Success Criteria       | API deals with corrupt request as intended. |
-|Special Considerations | - |
+|Technique Objective    | Stress testing the API.                                             |
+|Technique              | Exceptions handling                                                 |
+|Oracles                | Test exception handling by sending corrupt request to the API.      |
+|Required Tools         | Cucumber & database                                                 |
+|Success Criteria       | API deals with corrupt request as intended.                         |
+|Special Considerations | -                                                                   |
 
 
 #### 5.2.8 Volume Testing
@@ -238,12 +240,12 @@ n/a
 
 | Cucumber Tests        | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
-|Technique Objective    | Test the permissions of  |
-|Technique              | Permission checks for membership inside a space |
-|Oracles                | Check the permissions of a user for a given object. |
-|Required Tools         | Cucumber & database |
-|Success Criteria       | The user has the expected permissions (nothing more/less) |
-|Special Considerations | - |
+|Technique Objective    | Test the permissions of users.                                      |
+|Technique              | Permission checks for membership inside a space.                    |
+|Oracles                | Check the permissions of a user for a given object.                 |
+|Required Tools         | Cucumber & database                                                 |
+|Success Criteria       | The user has the expected permissions (nothing more/less)           |
+|Special Considerations | -                                                                   |
 
 
 #### 5.2.10 Failover and Recovery Testing
@@ -258,16 +260,14 @@ n/a
 
 #### 5.2.12 Installation Testing
 
-[Installation testing has two purposes. The first is to ensure that the software can be installed under different conditions (such as a new installation, an upgrade, and a complete or custom installation) under normal and abnormal conditions. Abnormal conditions include insufficient disk space, lack of privilege to create directories, and so on. The second purpose is to verify that, once installed, the software operates correctly. This usually means running a number of tests that were developed for Function Testing.]
-
-| GitHub Actions        | Description                                                         |
-|-----------------------|---------------------------------------------------------------------|
-|Technique Objective    |   Checks if the application is building and installing correctly after a update. |
-|Technique              |   GitHub Actions |
-|Oracles                |   The apps is installed on a universal device.  |
-|Required Tools         |   GitHub |
-|Success Criteria       |   Build and installation is successful.  |
-|Special Considerations |   -  |
+| GitHub Actions        | Description                                                                    |
+|-----------------------|--------------------------------------------------------------------------------|
+|Technique Objective    | Checks if the application is building and installing correctly after a update. |
+|Technique              | GitHub Actions                                                                 |
+|Oracles                | The apps is installed on a universal device.                                   |
+|Required Tools         | GitHub                                                                         |
+|Success Criteria       | Build and installation is successful.                                          |
+|Special Considerations | -                                                                              |
 
 
 ## 6. Entry and Exit Criteria
@@ -330,7 +330,7 @@ n/a
 n/a
 
 ### 7.6.2     Additional Automated Functional Test Scripts
-[These will be either a collection of the source code files for automated test scripts, or the repository of both source code and compiled executables for test scripts maintained by the test automation product.]
+-
 
 ### 7.6.3     Test Guidelines
 n/a
@@ -339,49 +339,25 @@ n/a
 n/a
 
 
-
 ## 8. Testing Workflow
 
-[Provide an outline of the workflow to be followed by the test team in the development and execution of this Test Plan.
-The specific testing workflow that you will use should be documented separately in the project's Development Case. It should explain how the project has customized the base RUP test workflow (typically on a phase-by-phase basis). In most cases, we recommend you place a reference in this section of the Test Plan to the relevant section of the Development Case. It might be both useful and sufficient to simply include a diagram or image depicting your test workflow.
-More specific details of the individual testing tasks are defined in a number of different ways, depending on project culture; for example:
-* defined as a list of tasks in this section of the Test Plan, or in an accompanying appendix
-* defined in a central project schedule (often in a scheduling tool such as Microsoft Project)
-* documented in individual, "dynamic" to-do lists for each team member, which are usually too detailed to be placed in the Test Plan
-* documented on a centrally located whiteboard and updated dynamically
-* not formally documented at all
-Based on your project culture, you should either list your specific testing tasks here or provide some descriptive text explaining the process your team uses to handle detailed task planning and provide a reference to where the details are stored, if appropriate.
-For Master Test Plans, we recommend avoiding detailed task planning, which is often an unproductive effort if done as a front-loaded activity at the beginning of the project. A Master Test Plan might usefully describe the phases and the number of iterations, and give an indication of what types of testing are generally planned for each Phase or Iteration.
-Note: Where process and detailed planning information is recorded centrally and separately from this Test Plan, you will have to manage the issues that will arise from having duplicate copies of the same information. To avoid team members referencing out-of-date information, we suggest that in this situation you place the minimum amount of process and planning information within the Test Plan to make ongoing maintenance easier and simply reference the "Master" source material.]
+The implementation of new feature or functionality is paired with development of test for said features and functionality. The developer has to decide with type of tests are most fitting for the new code. When all tests pass and an acceptable amount of code coverage is reached the code is pushed into the development branch. 
 
 ## 9. Environmental Needs
 
-[This section presents the non-human resources required for the Test Plan.]
-
 ### 9.1 Base System Hardware
-
-[The specific elements of the test system may not be fully understood in early iterations, so expect this section to be completed over time. We recommend that the system simulates the production environment, scaling down the concurrent access and database size, if and where appropriate.]
 
 The following table sets forth the system resources for the test effort presented in this Test Plan.
 
-| Resource                                                                | Quantity | Name and Type |
-|-------------------------------------------------------------------------|----------|---------------|
-| Database Server                                                         |          |               |
-| - Network or Subnet                                                     |          | TBD           |
-| - Server Name                                                           |          | TBD           |
-| - Database Name                                                         |          | TBD           |
-| Client Test PCs                                                         |          |               |
-| - Include special configuration requirements                            |          | TBD           |
-| Test Repository                                                         |          |               |
-| - Network or Subnet                                                     |          | TBD           |
-| - Server Name                                                           |          | TBD           |
-| Test Development PCs                                                    |          | TBD           |
+| Resource           | Quantity | Name and Type                               |
+|--------------------|----------|---------------------------------------------|
+| Local test machine | 3        | Own notebook / PC                           |
+| Production Server  | 1        | API provider / Frontend provider / Database |
+| GitHub CI/CD       | 1        | Testing, building and deploying application |
 
 ### 9.2 Base Software Elements in the Test Environment
 
 The following base software elements are required in the test environment for this Test Plan.
-
-[These are examples!]
 
 | Software Element Name |  Type and Other Notes                        |
 |-----------------------|----------------------------------------------|
@@ -391,33 +367,22 @@ The following base software elements are required in the test environment for th
 | Espresso              | UI testing library                           |
 | Cucumber              | human readable test definitions              |
 
-[These are examples!]
-
 ### 9.3 Productivity and Support Tools
 
 The following tools will be employed to support the test process for this Test Plan.
 
-| Tool Category or Type             | Tool Brand Name | Vendor or In-house | Version |
-|-----------------------------------|-----------------|--------------------|---------|
-| Test Management                   |                 |                    |         |
-| Defect Tracking                   |                 |                    |         |
-| ASQ Tool for functional testing   |                 |                    |         |
-| ASQ Tool for performance testing  |                 |                    |         |
-| Test Coverate Monitor or Profiler |                 |                    |         |
-| Project Management                |                 |                    |         |
-| DBMS tools                        |                 |                    |         |
+| Tool Category or Type | Tool Brand Name                                       |
+|-----------------------|-------------------------------------------------------|
+| Repository            | [GitHub](https://github.com/)                         |
+| CI/CD Service         | [GitHub actions](https://github.com/features/actions) |
+| Metrics               | [Jacoco](https://www.jacoco.org/jacoco/trunk/doc/)    |
+| Metrics               | [Sonarqube](https://www.sonarqube.org/)               |
 
 ### 9.4 Test Environment Configurations
 
 The following Test Environment Configurations need to be provided and supported for this project.
 
-| Configuration Name                | Description | Implemented in Physical Configuration |
-|-----------------------------------|-------------|---------------------------------------|
-| Average user configuration        |             |                                       |
-| Minimal configuration supported   |             |                                       |
-| Visually and mobility challenged  |             |                                       |
-| International Double Byte OS      |             |                                       |
-| Network installation (not client) |             |                                       |
+n/a
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
@@ -425,35 +390,30 @@ The following Test Environment Configurations need to be provided and supported 
 
 This table shows the staffing assumptions for the test effort.
 
-| Human Resources                          |                                                                         |                                                                                                                                                                                                                                                                                   |
-|------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Role                                     | Minimum Resources Recommended (number of full-time roles allocated)     | Specific Responsbilities or Comments                                                                                                                                                                                                                                              |
-| Test Manager                             |                                                                         | Provides management oversight. Responsibilities include: planning and logistics agree mission identify motivators acquire appropriate resources present management reporting advocate the interests of test evaluate effectiveness of test effort                                 |
-| Test Analyst                             |                                                                         | Identifies and defines the specific tests to be conducted. Responsibilities include: identify test ideas define test details determine test results document change requests evaluate product quality                                                                             |
-| Test Designer                            |                                                                         | Defines the technical approach to the implementation of the test effort. Responsibilities include: define test approace define test automation architecture verify test techniques define testability elements structure test implementation                                      |
-| Tester                                   |                                                                         | Implements and executes the tests. Responsibilities include: implement tests and test suites execute test suites log results analyze and recover from test failures document incidents                                                                                            |
-| Test System Administrator                |                                                                         | Ensurs test environment and assets are managed and maintained. Responsibilities include: administer test management system install and support access to, and recovery of, test environment configurations and test labs                                                          |
-| Database Administrator, Database Manager |                                                                         | Ensures test data (database) environment and assets are managed andmaintained. Responsibilities include: support the administration of test data and test beds (database)                                                                                                         |
-| Designer                                 |                                                                         | Identifies and defines the operations, attributes, and associations of the test classes. Responsibilities include: defines the test classes required to support testability requirements as defined by the test team                                                              |
-| Implementer                              |                                                                         | Implements and unit tests the test classes and test packages. Responsibilities include: creates the test components required to support testability requirements as defined by the designer                                                                                       |
+Human Resources
+
+| Role                                     | Specific Responsibilities or Comments                                          |
+|------------------------------------------|--------------------------------------------------------------------------------|
+| Test Manager                             | Provides management oversight                                                  |
+| Test Designer                            | Defines the technical approach to the implementation of the test effort        |
+| Tester                                   | Implements and executes the tests                                              |
+| Test System Administrator                | Ensures test environment and assets are managed and maintained                 | 
+| Database Administrator, Database Manager | Ensures test data (database) environment and assets are managed and maintained |
+| Implementer                              | Implements and unit tests the test classes and test packages                   |
 
 ### 10.2 Staffing and Training Needs
 
-This section outlines how to approach staffing and training the test roles for the project.
-
-[The way to approach staffing and training will vary from project to project. If this section is part of a Master Test Plan, you should indicate at what points in the project lifecycle different skills and numbers of staff are needed. If this is an Iteration Test Plan, you should focus mainly on where and what training might occur during the Iteration. Give thought to your training needs, and plan to schedule this based on a Just-In-Time (JIT) approach—there is often a temptation to attend training too far in advance of its usage when the test team has apparent slack. Doing this introduces the risk of the training being forgotten by the time it's needed. Look for opportunities to combine the purchase of productivity tools with training on those tools, and arrange with the vendor to delay delivery of the training until just before you need it. If you have enough headcount, consider having training delivered in a customized manner for you, possibly at your own site. The test team often requires the support and skills of other team members not directly part of the test team. Make sure you arrange in your plan for appropriate availability of System Administrators, Database Administrators, and Developers who are required to enable the test effort.]
+n/a
 
 ## 11. Iteration Milestones
 
-We want to keep over [XX]% code coverage.
+We want to keep over 20% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
 
-| Risk                                    | Mitigation Strategy                                           | Contingency (Risk is realized)                                                                              |
-|-----------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Prerequisite Entry Criteria is not met. |  Tester  will define the prerequisites that must be met before Load Testing can start.  Customer  will endeavor to meet prerequisites indicated by  Tester .          | meet outstanding prerequisites consider Load Test Failure                                                   |
-| Test data proves to be inadequate.      |  Customer  will ensure a full set of suitable and protected test data is available. br/  Tester  will indicate what is required and will verify suitability of test data. | redefine test data review Test Plan and modify Components (that is, scripts) consider Load Test Failure |
-| Database requires a refresh.            |  System Administrator  will endeavor to ensure that the Database is regularly refreshed as required by the  Tester .                                                      | restore data and restart clear Database                                                                     |
+| Risk                                                                     | Mitigation Strategy                 | Contingency (Risk is realized) |
+|--------------------------------------------------------------------------|-------------------------------------|--------------------------------|
+| [See Risk Management](https://vaultionizer.com/2021/04/11/week-12-hold/) | Continuous Risk Management            | Version Control                |
 
 ## 13. Management Process and Procedures
 
