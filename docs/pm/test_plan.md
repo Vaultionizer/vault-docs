@@ -118,7 +118,7 @@ This document is intended for internal documentation and overview over the testi
 | [UC Download File](./use_cases/uc_download_file.md)                    | Mai. 2021  | Vaultionizer              |    
 | [UC Encrypt](./use_cases/uc_encrypt.md)                                | Mai. 2021  | Vaultionizer              |    
 | [UC Show file](./use_cases/uc_show_file_structure.md)                   | Mai. 2021  | Vaultionizer              |    
-| [UC1 Upload File](./use_cases/uc_upload_file.md)                                 | Mai. 2021  | Vaultionizer              |   
+| [UC Upload File](./use_cases/uc_upload_file.md)                                 | Mai. 2021  | Vaultionizer              |   
 | [Test Plan](./TestPlan.md)                                              | Mai. 2021  | Vaultionizer              |
 | [SRS](./srs.md)                                                         | Mai. 2021  | Vaultionizer              |
 | [SAD](./sad.md)                                                         | Mai. 2021  | Vaultionizer              |
