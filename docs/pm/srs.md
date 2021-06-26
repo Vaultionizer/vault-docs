@@ -21,12 +21,12 @@ This Software Requirements Specification (SRS) describes all specifications for 
 
 ### 1.2 Scope
 The project is going to be realized as an Android App and a Spring Back-End application for the file storage and user-management itself.
-For the scope of this project we decided to realise the proejct as an Android App only, because most users out there have a smartphone that runs this operating system.
+For the scope of this project we decided to realise the project as an Android App only, because most users out there have a smartphone that runs this operating system.
 
 Planned Subsystems are: 
 * User system
-  * 
-* 
+* File system
+* Space system
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
@@ -44,7 +44,7 @@ Planned Subsystems are:
 | Title                                       | Date       | Publishing organization   |
 | ------------------------------------------- |:----------:| ------------------------- |
 | [Website &  Blog](https://vaultionizer.com) | 18.10.2020 | Vaultionizer              |
-| [FAQ](https://github.com/vaultionizer/faq)  | 18.10.2020 | Vaultionizer              |
+| [FAQ](https://vaultionizer.com/faq)         | 18.10.2020 | Vaultionizer              |
 | [GitHub](https://github.com/vaultionizer/)  | 18.10.2020 | Vaultionizer              |
 
 ### 1.5 Overview
@@ -101,46 +101,66 @@ This section will explain the different use cases, you could see in the Use Case
 
 #### 3.1.1 Upload file
 The user can upload files to his personal secure space. All of these files are encrypted via a personal key.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_upload_file.html).
 
-#### 3.1.2 Upload personal container
-The app will not only support the storage of files. You can also store all of your personal information like social security numbers, contact and more. The Android app will provide a seperate UI for this.
-Of course these information will get encrypted too.
+#### 3.1.2 Download file
+The user can download individual files. They get decrypted locally in order to provide strong security.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_download_file.html).
 
-#### 3.1.4 View file structure
+#### 3.1.3 View file structure
 The user can view the file structure without downloading any files.
 You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_show_file_structure.html).
 
-#### 3.1.5 Download file
-The user can download individual files. They get decrypted locally in order to provide strong security.
+#### 3.1.4 View file
+The user can view the content of their downloaded and decrypted files either in a built-in file viewer or open the file in a 3rd party app that is also installed on the local device.
 
-#### 3.1.6 Download personal container
-As mentioned in section 3.1.2 we offer the possibility to create a container for personal data.
-This container can be synced between multiple devices.
+#### 3.1.5 Encrypt
+Before the user can upload a file to the backend all files are encrypted on the local device.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_encrypt.html).
 
-#### 3.1.9 Register
-The app offers the ability to create an account on the server. This registration process is, however, restricted. The admin of the back-end is required to generate an authentification key that the user must provide for the registration. Besides this key, the user must also provide a host, an username and a secure master password.
+#### 3.1.6 Decrypt
+Before the user can view a file the content is decrypted on the local device.
+
+#### 3.1.7 Manage personal container
+The app will not only support the storage of files. You can also store all of your personal information like social security numbers, contact and more. The Android app will provide a separate UI for this.
+Of course these information will get encrypted too.
 
 #### 3.1.8 Login
 First of all the user must provide a host on which our back-end is running. The login itself is done via the username and master password.
 
-#### 3.1.10 Regenerate keys
-It is possible to invalidate an encrpytion key and generate a new one. All files that were previously encrypted with that key are now encrypted using the new one and uploaded again. 
+#### 3.1.9 Register
+The app offers the ability to create an account on the server. This registration process is, however, restricted. The admin of the back-end is required to generate an authentication key that the user must provide for the registration. Besides this key, the user must also provide a host, an username and a secure master password.
 
-#### 3.1.11 Delete keys
-Users can delete exisiting keys.
+#### 3.1.10 Delete user
+Users can delete their own account from the server and all data that is stored on the phone associated with the user.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_delete_user.html).
 
-#### 3.1.13 Create space
+#### 3.1.11 Manage keys
+Because transparency is key for Vaultionizer, the users can see their cryptographic keys, create new one or delete individual keys. 
+
+#### 3.1.12 Regenerate keys
+It is possible to invalidate an encryption key and generate a new one. All files that were previously encrypted with that key are now encrypted using the new one and uploaded again. 
+
+#### 3.1.13 Delete keys
+Users can delete existing keys.
+
+#### 3.1.14 Exchange keys
+Users can exchange encryption keys via a QR Code or Bluetooth. This is important for shared spaces because the server is never involved in any kind of key exchange.
+
+#### 3.1.15 Manage spaces
+Users can manage their spaces (create, delete, update configuration) and can set permissions for other people that might join the space in the future.
+
+#### 3.1.16 Create space
 Users on the same back-end have the possibility to create a shared space. It is pretty similar to a shared folder on Dropbox or Google Drive. The space is, of course, encrypted via a shared key. The owner of the space must exchange this key with other users via a method described in 3.1.15.
 You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_create_space.html).
 
-#### 3.1.14 Delete Space
+#### 3.1.17 Manage permissions
+Because users can invite other users to their spaces, it is also necessary to offer some kind of permissions system. A space owner can f.e. prevent other users from writing to a specific space.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_manage_permissions.html).
+
+#### 3.1.18 Delete Space
 Space owners can delete their spaces.
-
-#### 3.1.15 Generate key for invitations
-Because spaces have no searchable name and are usally hidden from other users, the space owner must generate an invitation key. This key is used to find the space on the server. Furthermore it is required to exchange the encryption key itself to decrypt the data.
-
-#### 3.1.12 Exchange keys
-Users can exchange encryption keys via a QR Code or Bluetooth. This is important for shared spaces because the server is never involved in any kind of key exchange.
+You can find the UCS [here](https://docs.vaultionizer.com/docs/pm/use_cases/uc_delete_space.html).
 
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. We also provide documentation for more complicated features.
@@ -159,7 +179,7 @@ Due to the fact that all of our components use docker for deployment, it is very
 We will provide the following versions for our software:
 
 * **Stable** - Well tested version which works on the latest Android/Java version.
-* **Development** - This version contains experimental features which were not fully tested and is ment to be used in production.
+* **Development** - This version contains experimental features which were not fully tested and is meant to be used in production.
 * **Nightly** - This is a daily build which is not guaranteed to work at all. Use this build if you want the latest experimental features.
 
 ### 3.4 Perfomance
@@ -168,15 +188,15 @@ We will provide the following versions for our software:
 The system should be able to manage thousands of requests even though this scenario is unlikely for a self host back-end. Bandwidth will be pretty important if many users upload or download files simultaneously.
 
 #### 3.4.2 Storage 
-Smartphones don't provide much storage. Therefore we are aiming to keep the needed storage as small as possible. Before the files are encrypted and uploaded to the server the app uses a general puropose compression algorithm in order to reduce the file size.
+Smartphones don't provide much storage. Therefore we are aiming to keep the needed storage as small as possible. Before the files are encrypted and uploaded to the server the app uses a general purpose compression algorithm in order to reduce the file size.
 
-#### 3.4.3 App perfomance / Response time
-To provide the best App perfomance we aim to keep the response time as low as possible. This will make the user experience much better.
+#### 3.4.3 App performance / Response time
+To provide the best App performance we aim to keep the response time as low as possible. This will make the user experience much better.
 
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
-We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
+We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further development much easier.
 Pull requests and code reviews will ensure that we adhere to these standards.
 
 #### 3.5.2 Testing Strategy
@@ -184,16 +204,16 @@ The application will have a high test coverage and all important functionalities
 On each pull request all tests are ran automatically to ensure that the change did not broke anything.  
 
 ### 3.6 Design Constraints
-We are trying to provide a modern and easy to handle design for the UI aswell as for the architecture of our application. To achieve that the functionalities will be kept as modular as possible.
+We are trying to provide a modern and easy to handle design for the UI as well as for the architecture of our application. To achieve that the functionalities will be kept as modular as possible.
 
-Because we are progamming an Android App we chose Java as our programming language. Also we are using the common MVC-architecture to keep the front end and back end seperated. For a clean front end structure we use MVVM.
+Because we are programming an Android App we chose Java as our programming language. Also we are using the common MVC-architecture to keep the front end and back end separated. For a clean front end structure we use MVVM.
 To make the communication between the two parts easy, we will implement a RESTful-API between them which will provide the data in JSON-Format. 
 The supported Platforms will be:
 - Android 4.4 and higher
 - Java 8 and higher
 
 ### 3.7 On-line User Documentation and Help System Requirements
-The usage of the app should be as intuitive as possible so it won't need any further documentation. If the user needs some help we will implement a "Help"-Button in the App which includes a FAQ and a formular to contact the developement team.
+The usage of the app should be as intuitive as possible so it won't need any further documentation. If the user needs some help we will implement a "Help"-Button in the App which includes a FAQ and a form to contact the development team.
 
 ### 3.8 Purchased Components
 We don't have any purchased components yet. If there will be purchased components in the future we will list them here.
@@ -201,13 +221,14 @@ We don't have any purchased components yet. If there will be purchased component
 ### 3.9 Interfaces
 
 #### 3.9.1 User Interfaces
-The User interfaces that will be implented are:
+The User interfaces that will be implemented are:
 - Dashboard - lists all hosts the user is connected to
 - Files - shows the file structure and allows the user to download and upload files
-- Persoanl container - Allows to store personal data like social security number and more
+- Personal container - Allows to store personal data like social security number and more
 - Login - this page is used to log in 
 - Register - provides a registration form
 - Settings - shows the settings
+- Manage Permissions - manage space permissions
 
 #### 3.9.2 Hardware Interfaces
 (n/a)
