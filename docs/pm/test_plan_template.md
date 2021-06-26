@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_exculde: true
+nav_exclude: true
 parent: Project management
 ---
 # Test Plan Template
