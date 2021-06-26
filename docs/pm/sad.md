@@ -103,7 +103,7 @@ The Android App will be downloadable via
 - White: Planned until end of June (second semester)
 
 ### 4.1 Use-Case Realizations
-All our Use-Cases are documented in our ![SRS](./srs.md)
+All our Use-Cases are documented in our [SRS](./srs.md)
 
 ## 5. Logical View
 
