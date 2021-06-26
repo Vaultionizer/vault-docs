@@ -21,7 +21,7 @@ grand_parent: Project management
 The user requests to download a specific file (given the space and the correct index) via HTTPS. The index for the file must be extracted from the reference file which can be done only in the frontend by the user. If the user's session is valid, the server sends the requested file via the individual websocket endpoint to the user. The user can then open the file locally.
 
 ### Mockup
-tbd
+![Mockup for file structure](../../../img/use_cases/mockups/Download.png)
 
 ## Flow of Evenets
 ### Basic Flow
