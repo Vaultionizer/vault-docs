@@ -1,6 +1,6 @@
 ---
 layout: default
-title: UCS Create space
+title: UCS Manage Permissions
 nav_order: 2
 has_children: true
 parent: Use cases
