@@ -1,3 +1,8 @@
+---
+layout: default
+nav_exculde: true
+parent: Project management
+---
 # Test Plan Template
 
 ## Table of contents
