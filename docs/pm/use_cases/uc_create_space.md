@@ -24,7 +24,7 @@ The properties are then tranfered to the server via a HTTP Rest-call.
 ### Mockup
 ![Activity Diagram for use case create space](../../../img/use_cases/mockups/AddNewSpace.png)
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use case create space](../../../img/use_cases/activity_diagrams/ad_create_space.svg)
 

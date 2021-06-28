@@ -24,7 +24,7 @@ On the application's side, all local reference files (the local copies of spaces
 ### Mockup
 tbd
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_delete_user.svg)
 

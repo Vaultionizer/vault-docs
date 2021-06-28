@@ -23,7 +23,7 @@ The user requests to download a specific file (given the space and the correct i
 ### Mockup
 ![Mockup for file structure](../../../img/use_cases/mockups/Download.png)
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_download_file.svg)
 

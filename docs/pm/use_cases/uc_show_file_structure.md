@@ -24,7 +24,7 @@ After the client downloaded the table and successfully decrypted the file, parsi
 ### Mockup
 ![Mockup for file structure](../../../img/use_cases/mockups/show_file_structure.png)
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use case show file structure](../../../img/use_cases/activity_diagrams/ad_show_file_structure.svg)
 

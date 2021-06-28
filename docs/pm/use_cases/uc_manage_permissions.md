@@ -23,9 +23,9 @@ The user should be able to do basic management of a shared space of which the us
 ### Mockup
 ![Activity Diagram for use case create space](../../../img/use_cases/mockups/ManagePermissions.png)
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
-n/a
+![Activity Diagram for use case manage permissions](../../../img/use_cases/activity_diagrams/ad_manage_space.svg)
 
 ## Gherkin file
 You can find the feature file for this use case [here](https://github.com/Vaultionizer/vault-server/blob/develop/src/test/resources/features/manageSpace.feature).

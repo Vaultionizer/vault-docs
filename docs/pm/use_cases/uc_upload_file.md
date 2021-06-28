@@ -23,7 +23,7 @@ In order to upload a file, the user has to request the server to reserve indices
 ### Mockup
 tbd
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use case create space](../../../img/use_cases/activity_diagrams/ad_upload_file.svg)
 

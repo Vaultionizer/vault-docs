@@ -23,7 +23,7 @@ The user requests to delete a specific space (given a unique spaceID). The serve
 ### Mockup
 tbd
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_delete_space.svg)
 

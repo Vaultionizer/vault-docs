@@ -23,7 +23,7 @@ While uploading a file the data is encrypted using locally store key inside the 
 ### Mockup
 tbd
 
-## Flow of Evenets
+## Flow of Events
 ### Basic Flow
 ![Activity Diagram for use ](../../../img/use_cases/activity_diagrams/ad_encrypt.svg)
 
