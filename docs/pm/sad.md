@@ -160,10 +160,10 @@ The class diagram for the frontend is not finished yet because it includes auto-
 
 Addtiontionally here is an Implementation of a facade pattern effecting the class diagram:
 
-Before - [GitHub](https://github.com/Vaultionizer/vault-android-app/tree/014310178ddded85cd16cd63dbe2368dda2f8b6b/app/src/main/java/com/vaultionizer/vaultapp/cryptography):
+Before - [Code](https://github.com/Vaultionizer/vault-android-app/tree/014310178ddded85cd16cd63dbe2368dda2f8b6b/app/src/main/java/com/vaultionizer/vaultapp/cryptography):
 ![Before - Class Diagram](../../img/common/crypto_before.png)
 
-After - [GitHub](https://github.com/Vaultionizer/vault-android-app/tree/14771592a9af4308323d8ab820d11936e09cfe1b/app/src/main/java/com/vaultionizer/vaultapp/cryptography):
+After - [Code](https://github.com/Vaultionizer/vault-android-app/tree/14771592a9af4308323d8ab820d11936e09cfe1b/app/src/main/java/com/vaultionizer/vaultapp/cryptography):
 ![After - Class Diagram](../../img/common/crypto_after.png)
 
 ### 8.2 Layers
