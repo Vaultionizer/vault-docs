@@ -159,6 +159,7 @@ The class diagram for the frontend is not finished yet because it includes auto-
 ![Frontend class diagram](../../img/frontend/vault-app-full.svg)
 
 Addtiontionally here is an Implementation of a facade pattern effecting the class diagram:
+
 Before - [GitHub](https://github.com/Vaultionizer/vault-android-app/tree/014310178ddded85cd16cd63dbe2368dda2f8b6b/app/src/main/java/com/vaultionizer/vaultapp/cryptography):
 ![Before - Class Diagram](../../img/common/crypto_before.png)
 
